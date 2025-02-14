@@ -132,7 +132,7 @@ button.active::after {
     padding: 15px; /* Innenabstand */
 	max-width: 800px; /* Kleinere maximale Breite */
 	max-height: 180px;
-    margin: -220px auto 20px; /* Zentriert, mit negativem Abstand oben für die Überlappung */
+    margin: -235px auto 20px; /* Zentriert, mit negativem Abstand oben für die Überlappung */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für einen 3D-Effekt */
     text-align: center; /* Text zentriert */
     position: relative; /* Damit es im Layout funktioniert */
