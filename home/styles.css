@@ -51,27 +51,6 @@ button.active::after {
     width: 100%; /* Der Strich ist permanent sichtbar */
 }
 
-/* Footer Styling */
-footer {
-    background-color: #111; /* Dunkler Hintergrund, passend zum Header */
-    color: white; /* Weißer Text */
-    text-align: center; /* Zentriert den Text im Footer */
-    padding: 10px; /* Abstand innerhalb des Footers */
-    bottom: 0; /*Fixiert den footer am unteren rand */
-    left: 0; /* Sicherstellen, dass der Footer bis zum linken Rand geht */
-    right: 0; /* Sicherstellen, dass der Footer bis zum rechten Rand geht */
-    width: 100%; /* Stellt sicher, dass der Footer die gesamte Breite einnimmt */
-    z-index: 999; /* Über allem anderen, falls nötig */
-    box-sizing: border-box; /* Damit Padding nicht zur Breite addiert wird */
-}
-
-footer p {
-    margin: 0; /* Höhe */
-    font-size: 14px; /* Kleinere Schriftgröße */
-    letter-spacing: 1px; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
-}
-
-
 .hero {
     position: relative; /* Für das Pseudo-Element */
     background-image: url("icons/Background.png"); /* Pfad zu deinem Hintergrundbild */
@@ -147,14 +126,13 @@ footer p {
 
 .info-box {
 	position: relative; /* Relativ zur vorherigen Schicht */
-	overflow-y: auto;
     z-index: 2; /* Über das Pseudo-Element legen */
     background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
-    border-radius: 10px; /* Kleinere abgerundete Ecken */
+    border-radius: 20px; /* Kleinere abgerundete Ecken */
     padding: 15px; /* Innenabstand */
-	max-width: 800px; /* Kleinere maximale Breite */
-	max-height: 180px;
-    margin: -220px auto 20px; /* Zentriert, mit negativem Abstand oben für die Überlappung */
+	width: 800px; /* Kleinere maximale Breite */
+	height: 180px;
+    margin: -235px auto 0px; /* Zentriert, mit negativem Abstand oben für die Überlappung */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für einen 3D-Effekt */
     text-align: center; /* Text zentriert */
     position: relative; /* Damit es im Layout funktioniert */
@@ -162,12 +140,33 @@ footer p {
 
 .info-box h4 {
     font-size: 1.5em;
-    margin-top: -5px;
+    margin-top: 10px;
     border-bottom: 2px solid black; /* Dicke und Farbe der Unterstreichung */
     display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
 }
 
 .info-box p {
     font-size: 1.2em; /* Größere Schriftgröße für den Paragraphen-Text */
-    margin-top: -5px;
+    margin-top: -10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #111; /* Dunkler Hintergrund, passend zum Header */
+    color: white; /* Weißer Text */
+    text-align: center; /* Zentriert den Text im Footer */
+    padding: 10px; /* Abstand innerhalb des Footers */
+    position: fixed;
+    bottom: 0; /*Fixiert den footer am unteren rand */
+    left: 0; /* Sicherstellen, dass der Footer bis zum linken Rand geht */
+    right: 0; /* Sicherstellen, dass der Footer bis zum rechten Rand geht */
+    width: 100%; /* Stellt sicher, dass der Footer die gesamte Breite einnimmt */
+    z-index: 999; /* Über allem anderen, falls nötig */
+    box-sizing: border-box; /* Damit Padding nicht zur Breite addiert wird */
+}
+
+footer p {
+    margin: 0; /* Höhe */
+    font-size: 14px; /* Kleinere Schriftgröße */
+    letter-spacing: 1px; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
 }
