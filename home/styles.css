@@ -173,14 +173,14 @@ footer p {
     /* Styling für den zweiten Container (Buttons) */
     .menu {
         display: flex; /* Flexbox für die Buttons */
-        gap: 10%; /* Abstand zwischen den Buttons */
+        gap: 10px; /* Abstand zwischen den Buttons */
         align-items: center; /* Vertikale Zentrierung der Buttons */
-        margin-left: 10%;
+        margin-left: 5px;
     }
     
     /* Styling für die Navigations-Buttons */
     button {
-        padding: 5px 5px; /* Innenabstand der Buttons */
+        padding: 10px 20px; /* Innenabstand der Buttons */
         background-color: transparent; /* Kein Hintergrund */
         color: black; /* Textfarbe */
         border: none; /* Kein Rahmen */
