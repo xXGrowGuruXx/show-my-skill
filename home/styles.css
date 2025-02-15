@@ -175,7 +175,7 @@ footer p {
         display: flex; /* Flexbox für die Buttons */
         gap: 10px; /* Abstand zwischen den Buttons */
         align-items: center; /* Vertikale Zentrierung der Buttons */
-        margin-left: 5px;
+        margin-left: 10px;
     }
     
     /* Styling für die Navigations-Buttons */
@@ -186,7 +186,7 @@ footer p {
         border: none; /* Kein Rahmen */
         cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
         position: relative; /* Für die Platzierung der Linie */
-        font-size: 50px; /* Größe der Schrift */
+        font-size: 20px; /* Größe der Schrift */
         font-weight: bold; /* Fett gedruckt */
     }
     
