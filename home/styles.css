@@ -159,24 +159,3 @@ footer p {
     font-size: 14px; /* Kleinere Schriftgröße */
     letter-spacing: 1px; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
 }
-
-/* Layout-Anpassung bei kleineren Bildschirmen */
-@media (max-width: 768px) {
-    header {
-        display: flex; /* Layout als Flexbox */
-        flex-direction: column;
-        align-items: left; /* Zentriert die Inhalte vertikal innerhalb des Headers */
-        padding: 5px; /* Abstand um den Header herum */
-        background-color: #ffffff; /* Hintergrundfarbe des Headers */
-    }
-    
-    .menu {
-        display: flex;
-        font-size: 20px;
-        margin-left: 20px;
-    }
-
-    .menu.button {
-        padding: 5px 5px;
-    }
-}
