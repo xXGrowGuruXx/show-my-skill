@@ -167,16 +167,16 @@ footer p {
         flex-direction: column;
         align-items: left; /* Zentriert die Inhalte vertikal innerhalb des Headers */
         padding: 20px; /* Abstand um den Header herum */
-        background-color: #000000; /* Hintergrundfarbe des Headers */
+        background-color: #ffffff; /* Hintergrundfarbe des Headers */
         gap: 10px; /* Abstand zwischen den beiden Containern verringern (hier auf 50px gesetzt) */
     }
     
     /* Styling für den zweiten Container (Buttons) */
     .menu {
         display: flex; /* Flexbox für die Buttons */
-        gap: 30px; /* Abstand zwischen den Buttons */
+        gap: 20px; /* Abstand zwischen den Buttons */
         align-items: center; /* Vertikale Zentrierung der Buttons */
-        margin-left: 480px;
+        margin-left: 20px;
     }
     
     /* Styling für die Navigations-Buttons */
@@ -187,7 +187,7 @@ footer p {
         border: none; /* Kein Rahmen */
         cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
         position: relative; /* Für die Platzierung der Linie */
-        font-size: 20px; /* Größe der Schrift */
+        font-size: 14px; /* Größe der Schrift */
         font-weight: bold; /* Fett gedruckt */
     }
     
