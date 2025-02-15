@@ -175,18 +175,18 @@ footer p {
         display: flex; /* Flexbox für die Buttons */
         gap: 10%; /* Abstand zwischen den Buttons */
         align-items: center; /* Vertikale Zentrierung der Buttons */
-        margin-left: 5%;
+        margin-left: 1%;
     }
     
     /* Styling für die Navigations-Buttons */
     button {
-        padding: 20% 20%; /* Innenabstand der Buttons */
+        padding: 0% 0%; /* Innenabstand der Buttons */
         background-color: transparent; /* Kein Hintergrund */
         color: black; /* Textfarbe */
         border: none; /* Kein Rahmen */
         cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
         position: relative; /* Für die Platzierung der Linie */
-        font-size: 50%; /* Größe der Schrift */
+        font-size: 20px; /* Größe der Schrift */
         font-weight: bold; /* Fett gedruckt */
     }
     
