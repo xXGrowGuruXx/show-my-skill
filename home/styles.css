@@ -173,7 +173,7 @@ footer p {
     /* Styling für den zweiten Container (Buttons) */
     .menu {
         display: flex; /* Flexbox für die Buttons */
-        gap: 10px; /* Abstand zwischen den Buttons */
+        gap: 20px; /* Abstand zwischen den Buttons */
         align-items: center; /* Vertikale Zentrierung der Buttons */
         margin-left: 10px;
     }
@@ -186,7 +186,7 @@ footer p {
         border: none; /* Kein Rahmen */
         cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
         position: relative; /* Für die Platzierung der Linie */
-        font-size: 20px; /* Größe der Schrift */
+        font-size: 30px; /* Größe der Schrift */
         font-weight: bold; /* Fett gedruckt */
     }
     
