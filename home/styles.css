@@ -113,17 +113,6 @@ button.active::after {
     background-color: #333; /* Dunklerer Hintergrund beim Hover */
 }
 
-/* Layout-Anpassung bei kleineren Bildschirmen */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Container übereinander anordnen bei kleineren Bildschirmen */
-    }
-
-    .container1, .container2 {
-        margin-bottom: 20px; /* Abstand zwischen den Containern bei kleinerem Layout */
-    }
-}
-
 .info-box {
 	position: relative; /* Relativ zur vorherigen Schicht */
     z-index: 2; /* Über das Pseudo-Element legen */
@@ -169,4 +158,16 @@ footer p {
     margin: 0; /* Höhe */
     font-size: 14px; /* Kleinere Schriftgröße */
     letter-spacing: 1px; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
+}
+
+/* Layout-Anpassung bei kleineren Bildschirmen */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Container übereinander anordnen bei kleineren Bildschirmen */
+        align-items: center;
+    }
+
+    .menu, .hero, .info-box {
+        margin-bottom: 20px; /* Abstand zwischen den Containern bei kleinerem Layout */
+    }
 }
