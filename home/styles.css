@@ -8,9 +8,9 @@ header {
 }
 
 .name {
-    margin-left: 100px;
-    width: 500px; /* Breite anpassen */
-    height: auto; /* Höhe proportional skalieren */
+    margin-left: 0px;
+    width: 700px; /* Breite anpassen */
+    height: 65px; /* Höhe proportional skalieren */
 }
 
 /* Styling für den zweiten Container (Buttons) */
