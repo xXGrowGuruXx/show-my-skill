@@ -8,8 +8,8 @@ header {
 }
 
 .name {
-    margin-left: 200px;
-    width: 230px; /* Breite anpassen */
+    margin-left: 100px;
+    width: 500px; /* Breite anpassen */
     height: auto; /* Höhe proportional skalieren */
 }
 
