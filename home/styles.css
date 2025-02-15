@@ -173,6 +173,10 @@ footer p {
     .menu {
         display: flex;
         font-size: 20px;
-        margin-left: 10px;
+        margin-left: -10px;
+    }
+
+    button {
+        padding: 10px 10px;
     }
 }
