@@ -3,9 +3,14 @@ header {
 	display: flex; /* Layout als Flexbox */
     justify-content: space-between; /* Verteilung von container1 und container2 links/rechts */
     align-items: center; /* Zentriert die Inhalte vertikal innerhalb des Headers */
-    padding: 20px; /* Abstand um den Header herum */
+    padding: 10px; /* Abstand um den Header herum */
     background-color: #f5f5f5; /* Hintergrundfarbe des Headers */
-    gap: 50px; /* Abstand zwischen den beiden Containern verringern (hier auf 50px gesetzt) */
+}
+
+.name {
+    margin-left: 200px;
+    width: 230px; /* Breite anpassen */
+    height: auto; /* Höhe proportional skalieren */
 }
 
 /* Styling für den zweiten Container (Buttons) */
@@ -13,7 +18,7 @@ header {
     display: flex; /* Flexbox für die Buttons */
     gap: 30px; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
-	margin-left: 480px;
+	margin-right: 20px;
 }
 
 /* Styling für die Navigations-Buttons */
@@ -38,7 +43,7 @@ button::after {
     position: absolute; /* Absolute Positionierung */
     bottom: -5px; /* Positionierung knapp unterhalb des Buttons */
     left: 0; /* Start von der linken Seite */
-    transition: width 0.3s ease; /* Animationseffekt beim Hover */
+    transition: width 0.5s ease; /* Animationseffekt beim Hover */
 }
 
 /* Hover-Effekt für den Strich */
