@@ -180,7 +180,7 @@ footer p {
     
     /* Styling für die Navigations-Buttons */
     button {
-        padding: 0px 15px; /* Innenabstand der Buttons */
+        padding: 10px 20px; /* Innenabstand der Buttons */
         background-color: transparent; /* Kein Hintergrund */
         color: black; /* Textfarbe */
         border: none; /* Kein Rahmen */
