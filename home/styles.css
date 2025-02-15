@@ -168,20 +168,19 @@ footer p {
         align-items: left; /* Zentriert die Inhalte vertikal innerhalb des Headers */
         padding: 20px; /* Abstand um den Header herum */
         background-color: #ffffff; /* Hintergrundfarbe des Headers */
-        gap: 10px; /* Abstand zwischen den beiden Containern verringern (hier auf 50px gesetzt) */
     }
     
     /* Styling für den zweiten Container (Buttons) */
     .menu {
         display: flex; /* Flexbox für die Buttons */
-        gap: 20px; /* Abstand zwischen den Buttons */
+        gap: 0px; /* Abstand zwischen den Buttons */
         align-items: center; /* Vertikale Zentrierung der Buttons */
         margin-left: 20px;
     }
     
     /* Styling für die Navigations-Buttons */
     button {
-        padding: 10px 20px; /* Innenabstand der Buttons */
+        padding: 0px 15px; /* Innenabstand der Buttons */
         background-color: transparent; /* Kein Hintergrund */
         color: black; /* Textfarbe */
         border: none; /* Kein Rahmen */
