@@ -165,7 +165,7 @@ footer p {
     header {
         display: flex; /* Layout als Flexbox */
         flex-direction: column;
-        align-items: center; /* Zentriert die Inhalte vertikal innerhalb des Headers */
+        align-items: left; /* Zentriert die Inhalte vertikal innerhalb des Headers */
         padding: 5px; /* Abstand um den Header herum */
         background-color: #ffffff; /* Hintergrundfarbe des Headers */
     }
@@ -186,7 +186,7 @@ footer p {
         border: none; /* Kein Rahmen */
         cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
         position: relative; /* Für die Platzierung der Linie */
-        font-size: 30px; /* Größe der Schrift */
+        font-size: 50px; /* Größe der Schrift */
         font-weight: bold; /* Fett gedruckt */
     }
     
