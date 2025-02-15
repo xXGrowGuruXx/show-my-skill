@@ -165,22 +165,22 @@ footer p {
     header {
         display: flex; /* Layout als Flexbox */
         flex-direction: column;
-        align-items: left; /* Zentriert die Inhalte vertikal innerhalb des Headers */
-        padding: 20px; /* Abstand um den Header herum */
+        align-items: center; /* Zentriert die Inhalte vertikal innerhalb des Headers */
+        padding: 10%; /* Abstand um den Header herum */
         background-color: #ffffff; /* Hintergrundfarbe des Headers */
     }
     
     /* Styling für den zweiten Container (Buttons) */
     .menu {
         display: flex; /* Flexbox für die Buttons */
-        gap: 10%; /* Abstand zwischen den Buttons */
+        gap: 20%; /* Abstand zwischen den Buttons */
         align-items: center; /* Vertikale Zentrierung der Buttons */
-        margin-left: 20%;
+        margin-left: 5%;
     }
     
     /* Styling für die Navigations-Buttons */
     button {
-        padding: 10% 20%; /* Innenabstand der Buttons */
+        padding: 30% 50%; /* Innenabstand der Buttons */
         background-color: transparent; /* Kein Hintergrund */
         color: black; /* Textfarbe */
         border: none; /* Kein Rahmen */
