@@ -12,6 +12,12 @@ header {
     z-index: 1000; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
 }
 
+/* Um sicherzustellen, dass der Inhalt unter dem Header nicht verdeckt wird */
+body {
+    padding-top: 80px; /* Abstand hinzufügen, damit der Inhalt nicht vom Header überlappt wird */
+    padding-bottom: 30px; /* Reserviert Platz für den Footer */
+}
+
 .name {
     margin-left: 0px;
     width: 700px; /* Breite anpassen */
