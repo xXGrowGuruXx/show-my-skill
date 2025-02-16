@@ -7,9 +7,11 @@ const canvas = document.getElementById('matrixCanvas');
 const ctx = canvas.getContext('2d');
 const columns = [];
 
-// Größe des Canvas anpassen
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = document.body.scrollHeight; // Passt sich der gesamten Seite an
+    initColumns(); // Spalten nach dem Resize neu initialisieren
+}
 
 // Funktion, um zufällige Zeichen zu erzeugen
 function spawnChar() {
@@ -17,57 +19,46 @@ function spawnChar() {
 }
 
 // Initialisierung der Spalten
-function init() {
+function initColumns() {
+    columns.length = 0; // Spalten zurücksetzen
     for (let i = 0; i < numColumns; i++) {
-        columns[i] = {
+        columns.push({
             chars: [],
-            x: i * 15,  // Abstand zwischen den Spalten
-            y: Math.random() * canvas.height // Zufällige Startposition in Y-Richtung
-        };
+            x: i * 15,  
+            y: Math.random() * canvas.height 
+        });
     }
-    // Alle 100ms die Spalten aktualisieren
-    setInterval(updateColumns, delay);
 }
 
 // Spalten aktualisieren: Zeichen fallen lassen
 function updateColumns() {
-    for (let i = 0; i < numColumns; i++) {
-        // Neues Zeichen oben hinzufügen
-        columns[i].chars.unshift(spawnChar());
-
-        // Wenn die Spalte mehr als maxCharsPerColumn hat, entfernen wir das unterste Zeichen
-        if (columns[i].chars.length > maxCharsPerColumn) {
-            columns[i].chars.pop();
+    for (let col of columns) {
+        col.chars.unshift(spawnChar());
+        if (col.chars.length > maxCharsPerColumn) {
+            col.chars.pop();
         }
     }
-
-    // Hintergrund mit dem Zeichenoutput füllen
     draw();
 }
 
 // Die Spalten und deren Zeichen zeichnen
 function draw() {
-    // Canvas leeren
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "rgba(0, 0, 0, 0.1)"; // Leichter Schatten für den Matrix-Effekt
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.font = "20px monospace";
+    ctx.fillStyle = "#00FF00"; // Grüne Schriftfarbe
 
-    // Zeichnen der Spalten
-    for (let i = 0; i < numColumns; i++) {
-        for (let j = 0; j < columns[i].chars.length; j++) {
-            const char = columns[i].chars[j];
-            ctx.fillText(char, columns[i].x, columns[i].y + j * 20); // Zeichen an der richtigen Position
+    for (let col of columns) {
+        for (let j = 0; j < col.chars.length; j++) {
+            ctx.fillText(col.chars[j], col.x, col.y + j * 20);
         }
-
-        // Die Spalten in Y-Richtung "fallen" lassen
-        columns[i].y += 20;
-        if (columns[i].y > canvas.height) {
-            columns[i].y = -20;  // Wenn die Spalte unten angekommen ist, nach oben zurücksetzen
-        }
+        col.y += 20;
+        if (col.y > canvas.height) col.y = -20;
     }
 }
 
-// Zeichnen der Schriftarten
-ctx.font = '20px monospace';
-ctx.fillStyle = '#00FF00';  // grüne Schriftfarbe für den Matrix-Look
-
-// Die Animation starten
-init();
+window.addEventListener("resize", resizeCanvas);
+window.addEventListener("load", () => {
+    resizeCanvas();
+    setInterval(updateColumns, delay);
+});
