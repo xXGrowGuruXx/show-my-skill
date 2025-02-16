@@ -15,7 +15,6 @@ header {
 body {
     padding-top: 80px; /* Abstand hinzufügen, damit der Inhalt nicht vom Header überlappt wird */
     padding-bottom: 30px; /* Reserviert Platz für den Footer */
-    background-image: url("icons/Background.png"); /* Pfad zu deinem Hintergrundbild */
 }
 
 .name {

@@ -69,7 +69,7 @@ button.active::after {
 
 .hero {
     position: relative; /* Für das Pseudo-Element */
-    background-image: url("icons/Background.png"); /* Pfad zu deinem Hintergrundbild */
+    background-image: url("/show-my-skill/icons/Background.png"); /* Pfad zu deinem Hintergrundbild */
     background-size: cover; /* Bild vollständig skalieren */
     background-position: center; /* Bild zentrieren */
     height: 69vh; /* Höhe des Hero-Sections */
@@ -79,7 +79,7 @@ button.active::after {
     align-items: center; /* Horizontal zentrieren */
     color: white; /* Textfarbe */
     text-align: center; /* Text zentrieren */
-    padding: 39px; /* Innenabstand für den Hero-Bereich */
+    padding: 20px; /* Innenabstand für den Hero-Bereich */
     font-weight: bold; /* Text fett machen */
 }
 
