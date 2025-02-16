@@ -91,16 +91,19 @@ button.active::after {
 .hero::before {
     content: ''; /* Leeres Pseudo-Element */
     position: absolute; /* Absolute Positionierung */
-    top: 0; /* Oben ausrichten */
-    left: 0; /* Links ausrichten */
-    right: 0; /* Rechts ausrichten */
-    bottom: 0; /* Unten ausrichten */
+    top: 30px;
+    left: 280px; /* Links ausrichten */
+    right: 0px; /* Rechts ausrichten */
+    width: 900px;
+    height: 500px;
     background-color: rgba(0, 0, 0, 0.5); /* Dunkler, halbtransparenter Hintergrund */
     z-index: 1; /* Unter die Texte legen */
+    border-radius: 20px; /* Kleinere abgerundete Ecken */
 }
 
 .hero h2, .hero h3 {
     position: relative; /* Relativ zur vorherigen Schicht */
+    top: -50px;
     z-index: 2; /* Über das Pseudo-Element legen */
 }
 
@@ -126,7 +129,7 @@ button.active::after {
     border-radius: 25px; /* Abgerundete Ecken */
     font-size: 1.2em; /* Schriftgröße */
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
-    margin-top: 20px; /* Abstand zum oberen Inhalt */
+    top: -20px; /* Abstand zum oberen Inhalt */
     transition: background-color 0.3s ease; /* Animationseffekt für den Hintergrund */
 }
 
