@@ -67,6 +67,10 @@ button.active::after {
     width: 100%; /* Der Strich ist permanent sichtbar */
 }
 
+.background {
+    z-index: 0;
+}
+
 .hero {
     position: relative; /* Für das Pseudo-Element */
     background-image: url("/show-my-skill/icons/Background.png"); /* Pfad zu deinem Hintergrundbild */
@@ -81,6 +85,7 @@ button.active::after {
     text-align: center; /* Text zentrieren */
     padding: 20px; /* Innenabstand für den Hero-Bereich */
     font-weight: bold; /* Text fett machen */
+    z-index: 1;
 }
 
 .hero::before {

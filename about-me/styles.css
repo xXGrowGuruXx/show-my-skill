@@ -66,6 +66,10 @@ button.active::after {
     width: 100%; /* Der Strich ist permanent sichtbar */
 }
 
+.background {
+    z-index: 0;
+}
+
 .lebenslauf {
     display: flex;
     flex-direction: column;
@@ -83,6 +87,7 @@ button.active::after {
     background: #ffffff;
     font-family: Arial, sans-serif;
     text-align: center;
+    z-index: 1; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
 }
 
 .container h2 {
@@ -92,11 +97,13 @@ button.active::after {
     border-bottom: 5px solid black; /* Dicke und Farbe der Unterstreichung */
     display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
     font-weight: bold; /* Fettgedruckt */
+    z-index: 2; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
 }
 
 .container p{
     line-height: 1.6; /* Erhöht den Abstand zwischen den Zeilen */
     font-size: 18px;
+    z-index: 2; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
 }
 
 /* Persönliche Info */
