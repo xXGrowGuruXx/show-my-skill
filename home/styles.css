@@ -94,7 +94,7 @@ button.active::after {
     top: 30px;
     left: 280px; /* Links ausrichten */
     right: 0px; /* Rechts ausrichten */
-    width: 900px;
+    width: 1000px;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.5); /* Dunkler, halbtransparenter Hintergrund */
     z-index: 1; /* Unter die Texte legen */
