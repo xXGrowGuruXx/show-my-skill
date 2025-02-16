@@ -3,7 +3,7 @@ header {
     display: flex; /* Layout als Flexbox */
     justify-content: space-between; /* Verteilung von container1 und container2 links/rechts */
     align-items: center; /* Zentriert die Inhalte vertikal innerhalb des Headers */
-    padding: 10px; /* Abstand um den Header herum */
+    padding: 0px; /* Abstand um den Header herum */
     background-color: #ffffff; /* Hintergrundfarbe des Headers */
     position: fixed; /* Fixiert das Header oben */
     top: 0; /* Positioniert den Header am oberen Rand */
