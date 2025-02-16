@@ -92,9 +92,9 @@ button.active::after {
     position: absolute; /* Absolute Positionierung */
     background-image: url("/show-my-skill/icons/Background.png"); /* Pfad zu deinem Hintergrundbild */
     top: 30px;
-    left: 230px; /* Links ausrichten */
+    left: 180px; /* Links ausrichten */
     right: 0px; /* Rechts ausrichten */
-    width: 1200px;
+    width: 1100px;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.5); /* Dunkler, halbtransparenter Hintergrund */
     z-index: 1; /* Unter die Texte legen */
