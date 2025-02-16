@@ -1,6 +1,6 @@
-const numColumns = 110; // Anzahl der Spalten
-const maxCharsPerColumn = 7; // Max. 7 Zeichen pro Spalte
-const delay = 100; // Millisekunden zwischen den Updates
+const numColumns = 110; 
+const maxCharsPerColumn = 7; 
+const delay = 100; 
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
 const canvas = document.getElementById('matrixCanvas');
@@ -9,8 +9,8 @@ const columns = [];
 
 function resizeCanvas() {
     canvas.width = window.innerWidth;
-    canvas.height = document.body.scrollHeight; // Passt sich der gesamten Seite an
-    initColumns(); // Spalten nach dem Resize neu initialisieren
+    canvas.height = document.documentElement.scrollHeight; // Fix: Ganze Seitenhöhe nehmen
+    initColumns(); 
 }
 
 // Funktion, um zufällige Zeichen zu erzeugen
@@ -20,7 +20,7 @@ function spawnChar() {
 
 // Initialisierung der Spalten
 function initColumns() {
-    columns.length = 0; // Spalten zurücksetzen
+    columns.length = 0; 
     for (let i = 0; i < numColumns; i++) {
         columns.push({
             chars: [],
@@ -43,10 +43,10 @@ function updateColumns() {
 
 // Die Spalten und deren Zeichen zeichnen
 function draw() {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.1)"; // Leichter Schatten für den Matrix-Effekt
+    ctx.fillStyle = "rgba(0, 0, 0, 0.1)"; 
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.font = "20px monospace";
-    ctx.fillStyle = "#00FF00"; // Grüne Schriftfarbe
+    ctx.fillStyle = "#00FF00"; 
 
     for (let col of columns) {
         for (let j = 0; j < col.chars.length; j++) {
