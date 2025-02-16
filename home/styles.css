@@ -72,39 +72,28 @@ button.active::after {
 }
 
 .hero {
-    position: relative; /* Für das Pseudo-Element */
-    background-size: cover; /* Bild vollständig skalieren */
-    background-position: center; /* Bild zentrieren */
-    height: 69vh; /* Höhe des Hero-Sections */
-    display: flex; /* Flexbox-Layout für zentrierte Texte */
-    flex-direction: column; /* Vertikale Anordnung der Kinder */
-    justify-content: center; /* Vertikal zentrieren */
-    align-items: center; /* Horizontal zentrieren */
-    color: white; /* Textfarbe */
-    text-align: center; /* Text zentrieren */
-    padding: 20px; /* Innenabstand für den Hero-Bereich */
-    font-weight: bold; /* Text fett machen */
-    z-index: 1;
-}
-
-.hero::before {
-    content: ''; /* Leeres Pseudo-Element */
-    position: absolute; /* Absolute Positionierung */
-    background-image: url("/show-my-skill/icons/Background.png"); /* Pfad zu deinem Hintergrundbild */
-    top: 30px;
-    left: 180px; /* Links ausrichten */
-    right: 0px; /* Rechts ausrichten */
-    width: 1100px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.5); /* Dunkler, halbtransparenter Hintergrund */
-    z-index: 1; /* Unter die Texte legen */
+    position: absolute; /* Relativ zur vorherigen Schicht */
+    z-index: 2; /* Über das Pseudo-Element legen */
+    background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
+    border: 5px solid #000000;
     border-radius: 20px; /* Kleinere abgerundete Ecken */
+    padding: 15px; /* Innenabstand */
+    width: 800px; /* Kleinere maximale Breite */
+    height: 250px;
+    top: 35%; /* Vertikale Zentrierung */
+    left: 50%; /* Horizontale Zentrierung */
+    transform: translate(-50%, -50%); /* Korrektur der Zentrierung */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für einen 3D-Effekt */
+    text-align: center; /* Text zentriert */
 }
 
 .hero h2, .hero h3 {
     position: relative; /* Relativ zur vorherigen Schicht */
-    top: -50px;
+    color: rgb(0, 0, 0); /* Textfarbe */
+    text-align: center; /* Text zentrieren */
+    font-weight: bold; /* Text fett machen */
     z-index: 2; /* Über das Pseudo-Element legen */
+    top: 60%; /* Vertikale Zentrierung */
 }
 
 .hero h2 {
@@ -129,7 +118,7 @@ button.active::after {
     border-radius: 25px; /* Abgerundete Ecken */
     font-size: 1.2em; /* Schriftgröße */
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
-    top: -20px; /* Abstand zum oberen Inhalt */
+    top: 180px; /* Abstand zum oberen Inhalt */
     transition: background-color 0.3s ease; /* Animationseffekt für den Hintergrund */
 }
 
@@ -138,29 +127,33 @@ button.active::after {
 }
 
 .info-box {
-	position: relative; /* Relativ zur vorherigen Schicht */
+	position: absolute; /* Relativ zur vorherigen Schicht */
     z-index: 2; /* Über das Pseudo-Element legen */
     background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
+    border: 5px solid #000000;
     border-radius: 20px; /* Kleinere abgerundete Ecken */
     padding: 15px; /* Innenabstand */
 	max-width: 800px; /* Kleinere maximale Breite */
 	max-height: 180px;
-    margin: -235px auto 20px; /* Zentriert, mit negativem Abstand oben für die Überlappung */
+    top: 75%; /* Vertikale Zentrierung */
+    left: 50%; /* Horizontale Zentrierung */
+    transform: translate(-50%, -50%); /* Korrektur der Zentrierung */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für einen 3D-Effekt */
     text-align: center; /* Text zentriert */
-    position: relative; /* Damit es im Layout funktioniert */
 }
 
 .info-box h4 {
+    position: relative;
     font-size: 1.5em;
-    margin-top: 10px;
+    top: -35px;
     border-bottom: 2px solid black; /* Dicke und Farbe der Unterstreichung */
     display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
 }
 
 .info-box p {
+    position: relative;
     font-size: 1.2em; /* Größere Schriftgröße für den Paragraphen-Text */
-    margin-top: -10px;
+    bottom: 70px;
 }
 
 /* Footer Styling */
