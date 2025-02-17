@@ -134,7 +134,7 @@ button.active::after {
     padding: 15px; /* Innenabstand */
 	width: 55%;
 	height: 25%;
-    top: 80%; /* Vertikale Zentrierung */
+    top: 75%; /* Vertikale Zentrierung */
     left: 50%; /* Horizontale Zentrierung */
     transform: translate(-50%, -50%); /* Korrektur der Zentrierung */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für einen 3D-Effekt */
