@@ -81,7 +81,7 @@ button.active::after {
     padding: 1%; /* Innenabstand */
     width: 60%; /* Kleinere maximale Breite */
     height: 30%;
-    top: 40%; /* Vertikale Zentrierung */
+    top: 35%; /* Vertikale Zentrierung */
     left: 50%; /* Horizontale Zentrierung */
     transform: translate(-50%, -50%); /* Korrektur der Zentrierung */
     text-align: center; /* Text zentriert */
