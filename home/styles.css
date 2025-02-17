@@ -20,8 +20,8 @@ body {
 
 .name {
     margin-left: 0;
-    width: 45%; /* Breite anpassen */
-    height: 3%; /* Höhe proportional skalieren */
+    width: 45%; /* Breite */
+    height: 1%; 
 }
 
 /* Styling für den zweiten Container (Buttons) */
