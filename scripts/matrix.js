@@ -9,7 +9,7 @@ const columns = [];
 
 function resizeCanvas() {
     canvas.width = document.documentElement.scrollWidth;
-    canvas.height = document.documentElement.scrollHeight; // Fix: Ganze Seitenhöhe nehmen
+    canvas.height = document.documentElement.scrollHeight; // Ganze Seitenhöhe nehmen
     initColumns(); 
 }
 

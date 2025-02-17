@@ -14,33 +14,34 @@ header {
 
 /* Um sicherzustellen, dass der Inhalt unter dem Header nicht verdeckt wird */
 body {
-    padding-top: 80px; /* Abstand hinzufügen, damit der Inhalt nicht vom Header überlappt wird */
-    padding-bottom: 30px; /* Reserviert Platz für den Footer */
+    padding-top: 10%; /* Abstand hinzufügen, damit der Inhalt nicht vom Header überlappt wird */
+    padding-bottom: 30%; /* Reserviert Platz für den Footer */
 }
 
 .name {
-    margin-left: 0px;
-    width: 700px; /* Breite anpassen */
-    height: 65px; /* Höhe proportional skalieren */
+    margin-left: 0;
+    width: 80%; /* Breite anpassen */
+    height: 20%; /* Höhe proportional skalieren */
 }
 
 /* Styling für den zweiten Container (Buttons) */
 .menu {
     display: flex; /* Flexbox für die Buttons */
-    gap: 30px; /* Abstand zwischen den Buttons */
+    gap: 10%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
-	margin-right: 20px;
+	margin-right: 15%;
 }
 
 /* Styling für die Navigations-Buttons */
 button {
-    padding: 10px 20px; /* Innenabstand der Buttons */
+    padding: 10% 10%; /* Höhe | Breite */
+    white-space: nowrap; /* Verhindert das Umbruchverhalten */
     background-color: transparent; /* Kein Hintergrund */
     color: black; /* Textfarbe */
     border: none; /* Kein Rahmen */
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
     position: relative; /* Für die Platzierung der Linie */
-    font-size: 20px; /* Größe der Schrift */
+    font-size: 130%; /* Größe der Schrift */
     font-weight: bold; /* Fett gedruckt */
 }
 
@@ -49,10 +50,10 @@ button::after {
     content: ''; /* Leerer Inhalt für den Strich */
     display: block; /* Blockelement */
     width: 0; /* Startbreite: 0 */
-    height: 2px; /* Höhe des Strichs */
+    height: 7%; /* Höhe des Strichs */
     background: black; /* Farbe des Strichs */
     position: absolute; /* Absolute Positionierung */
-    bottom: -5px; /* Positionierung knapp unterhalb des Buttons */
+    bottom: -5%; /* Positionierung knapp unterhalb des Buttons */
     left: 0; /* Start von der linken Seite */
     transition: width 0.5s ease; /* Animationseffekt beim Hover */
 }
@@ -76,14 +77,13 @@ button.active::after {
     z-index: 2; /* Über das Pseudo-Element legen */
     background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
     border: 5px solid #000000;
-    border-radius: 20px; /* Kleinere abgerundete Ecken */
-    padding: 15px; /* Innenabstand */
-    width: 800px; /* Kleinere maximale Breite */
-    height: 250px;
-    top: 35%; /* Vertikale Zentrierung */
+    border-radius: 20%; /* Kleinere abgerundete Ecken */
+    padding: 1%; /* Innenabstand */
+    width: 60%; /* Kleinere maximale Breite */
+    height: 30%;
+    top: 30%; /* Vertikale Zentrierung */
     left: 50%; /* Horizontale Zentrierung */
     transform: translate(-50%, -50%); /* Korrektur der Zentrierung */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für einen 3D-Effekt */
     text-align: center; /* Text zentriert */
 }
 
@@ -93,18 +93,17 @@ button.active::after {
     text-align: center; /* Text zentrieren */
     font-weight: bold; /* Text fett machen */
     z-index: 2; /* Über das Pseudo-Element legen */
-    top: 60%; /* Vertikale Zentrierung */
+    top: 5%; /* Vertikale Zentrierung */
 }
 
 .hero h2 {
     font-size: 3em; /* Erhöhe die Schriftgröße für h2 */
     margin: 0; /* Entferne den Standardabstand */
-    margin-top: -150px;
 }
 
 .hero h3 {
     font-size: 2em; /* Erhöhe die Schriftgröße für h3 */
-    margin: 10px 0; /* Füge Abstand zwischen h2 und h3 hinzu */
+    margin: 1% 0; /* Füge Abstand zwischen h2 und h3 hinzu */
 }
 
 
@@ -114,11 +113,11 @@ button.active::after {
     background-color: black; /* Hintergrundfarbe des Buttons */
     color: white; /* Textfarbe des Buttons */
     border: none; /* Kein Rahmen */
-    padding: 15px 30px; /* Innenabstand für den Button */
+    padding: 1% 3%; /* Höhe | Breite */
     border-radius: 25px; /* Abgerundete Ecken */
     font-size: 1.2em; /* Schriftgröße */
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
-    top: 180px; /* Abstand zum oberen Inhalt */
+    top: 20%; /* Abstand zum oberen Inhalt */
     transition: background-color 0.3s ease; /* Animationseffekt für den Hintergrund */
 }
 
@@ -131,11 +130,11 @@ button.active::after {
     z-index: 2; /* Über das Pseudo-Element legen */
     background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
     border: 5px solid #000000;
-    border-radius: 20px; /* Kleinere abgerundete Ecken */
+    border-radius: 20%; /* Kleinere abgerundete Ecken */
     padding: 15px; /* Innenabstand */
-	max-width: 800px; /* Kleinere maximale Breite */
-	max-height: 180px;
-    top: 75%; /* Vertikale Zentrierung */
+	width: 55%;
+	height: 25%;
+    top: 70%; /* Vertikale Zentrierung */
     left: 50%; /* Horizontale Zentrierung */
     transform: translate(-50%, -50%); /* Korrektur der Zentrierung */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für einen 3D-Effekt */
@@ -161,7 +160,7 @@ footer {
     background-color: #111; /* Dunkler Hintergrund, passend zum Header */
     color: white; /* Weißer Text */
     text-align: center; /* Zentriert den Text im Footer */
-    padding: 10px; /* Abstand innerhalb des Footers */
+    padding: 1%; /* Abstand innerhalb des Footers */
     position: fixed;
     bottom: 0; /*Fixiert den footer am unteren rand */
     left: 0; /* Sicherstellen, dass der Footer bis zum linken Rand geht */
@@ -172,7 +171,8 @@ footer {
 }
 
 footer p {
+    position: relative;
     margin: 0; /* Höhe */
-    font-size: 14px; /* Kleinere Schriftgröße */
-    letter-spacing: 1px; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
+    font-size: 100%; /* Kleinere Schriftgröße */
+    letter-spacing: 20%; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
 }
