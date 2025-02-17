@@ -21,7 +21,7 @@ body {
 .name {
     margin-left: 0;
     width: 45%; /* Breite */
-    height: 1%; 
+    height: auto; 
 }
 
 /* Styling für den zweiten Container (Buttons) */
