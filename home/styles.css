@@ -3,7 +3,7 @@ header {
     display: flex; /* Layout als Flexbox */
     justify-content: space-between; /* Verteilung von container1 und container2 links/rechts */
     align-items: center; /* Zentriert die Inhalte vertikal innerhalb des Headers */
-    padding: 10px; /* Abstand um den Header herum */
+    padding: 1%; /* Abstand um den Header herum */
     background-color: #ffffff; /* Hintergrundfarbe des Headers */
     position: fixed; /* Fixiert das Header oben */
     top: 0; /* Positioniert den Header am oberen Rand */
@@ -81,7 +81,7 @@ button.active::after {
     padding: 1%; /* Innenabstand */
     width: 60%; /* Kleinere maximale Breite */
     height: 30%;
-    top: 30%; /* Vertikale Zentrierung */
+    top: 40%; /* Vertikale Zentrierung */
     left: 50%; /* Horizontale Zentrierung */
     transform: translate(-50%, -50%); /* Korrektur der Zentrierung */
     text-align: center; /* Text zentriert */
@@ -134,7 +134,7 @@ button.active::after {
     padding: 15px; /* Innenabstand */
 	width: 55%;
 	height: 25%;
-    top: 70%; /* Vertikale Zentrierung */
+    top: 80%; /* Vertikale Zentrierung */
     left: 50%; /* Horizontale Zentrierung */
     transform: translate(-50%, -50%); /* Korrektur der Zentrierung */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für einen 3D-Effekt */
