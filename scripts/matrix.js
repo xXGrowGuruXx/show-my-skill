@@ -11,7 +11,7 @@ function resizeCanvas() {
     let zoomFactor = 1 / window.devicePixelRatio; 
 
     canvas.width = window.width * zoomFactor;
-    canvas.height = window.width * zoomFactor;
+    canvas.height = window.height * zoomFactor;
 
     initColumns();
 }
