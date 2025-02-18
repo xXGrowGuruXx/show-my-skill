@@ -1,4 +1,4 @@
-const numColumns = 130; 
+numColumns = Math.floor(canvas.width / 15);
 const maxCharsPerColumn = 7; 
 const delay = 100; 
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -23,9 +23,9 @@ function fixZoom() {
 /////////////   Background   ///////////////////////
 function resizeCanvas() {
     let zoomFactor = 1 / window.devicePixelRatio;
-
-    canvas.width = document.documentElement.scrollWidth / zoomFactor;
-    canvas.height = document.documentElement.scrollHeight / zoomFactor;
+    
+    canvas.width = Math.floor(window.innerWidth / zoomFactor);
+    canvas.height = Math.floor(window.innerHeight / zoomFactor);
     initColumns();
 }
 
