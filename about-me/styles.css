@@ -16,6 +16,8 @@ header {
 body {
     padding-top: 10%; /* Abstand hinzufügen, damit der Inhalt nicht vom Header überlappt wird */
     padding-bottom: 10%; /* Reserviert Platz für den Footer */
+    padding-left: 0;
+    padding-right: 0;
     transform: scale(calc(1 / var(--zoom-factor)));
     transform-origin: top left;
     width: calc(100% * var(--zoom-factor));
@@ -33,7 +35,7 @@ body {
     display: flex; /* Flexbox für die Buttons */
     gap: 20%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
-	margin-right: 20%;
+	margin-right: 25%;
 }
 
 /* Styling für die Navigations-Buttons */
