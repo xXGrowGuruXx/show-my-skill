@@ -1,4 +1,3 @@
-numColumns = Math.floor(canvas.width / 15);
 const maxCharsPerColumn = 7; 
 const delay = 100; 
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -6,6 +5,7 @@ const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 const canvas = document.getElementById('matrixCanvas');
 const ctx = canvas.getContext('2d');
 const columns = [];
+const numColumns = Math.floor(canvas.width / 15);
 
 ///////////////     Layout Fixen  ////////////////////
 function fixZoom() {
