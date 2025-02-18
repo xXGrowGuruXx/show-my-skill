@@ -148,15 +148,15 @@ button.active::after {
 .info-box h4 {
     position: relative;
     font-size: 180%;
-    top: -5%;
+    top: -1%;
     border-bottom: 2px solid black; /* Dicke und Farbe der Unterstreichung */
     display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
 }
 
 .info-box p {
     position: relative;
-    font-size: 130%; /* Größere Schriftgröße für den Paragraphen-Text */
-    bottom: 10%;
+    font-size: 150%; /* Größere Schriftgröße für den Paragraphen-Text */
+    bottom: 30%;
 }
 
 /* Footer Styling */
