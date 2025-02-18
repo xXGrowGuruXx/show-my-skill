@@ -135,7 +135,7 @@ footer {
     background-color: #111; /* Dunkler Hintergrund, passend zum Header */
     color: white; /* Weißer Text */
     text-align: center; /* Zentriert den Text im Footer */
-    padding: 1%; /* Abstand innerhalb des Footers */
+    padding: 10px; /* Abstand innerhalb des Footers */
     position: fixed;
     bottom: 0; /*Fixiert den footer am unteren rand */
     left: 0; /* Sicherstellen, dass der Footer bis zum linken Rand geht */
@@ -146,8 +146,7 @@ footer {
 }
 
 footer p {
-    position: relative;
     margin: 0; /* Höhe */
-    font-size: 120%; /* Kleinere Schriftgröße */
-    letter-spacing: 50%; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
+    font-size: 14px; /* Kleinere Schriftgröße */
+    letter-spacing: 1px; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
 }
