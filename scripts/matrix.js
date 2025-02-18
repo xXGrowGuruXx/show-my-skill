@@ -10,8 +10,8 @@ const columns = [];
 function resizeCanvas() {
     let zoomFactor = 1 / window.devicePixelRatio; 
 
-    canvas.width = document.width * zoomFactor;
-    canvas.height = document.width * zoomFactor;
+    canvas.width = window.width * zoomFactor;
+    canvas.height = window.width * zoomFactor;
 
     initColumns();
 }
