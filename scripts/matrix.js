@@ -24,8 +24,8 @@ function resizeCanvas() {
     let zoomFactor = 1 / window.devicePixelRatio;
 
     // Berechne die sichtbare Breite und Höhe
-    let viewportWidth = window.innerWidth;
-    let viewportHeight = window.innerHeight;
+    let viewportWidth = document.documentElement.clientWidth;
+    let viewportHeight = document.documentElement.clientHeight;
 
     // Berechne die Scrollgrößen
     let scrollWidth = document.documentElement.scrollWidth;
