@@ -13,7 +13,7 @@ function resizeCanvas() {
     canvas.width = window.innerWidth * zoomFactor;
     canvas.height = window.innerHeight * zoomFactor;
 
-    initColumns(); 
+    initColumns();
 }
 
 // Funktion, um zufällige Zeichen zu erzeugen
