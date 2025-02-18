@@ -22,9 +22,13 @@ function fixZoom() {
 /////////////   Background   ///////////////////////
 function resizeCanvas() {
     let zoomFactor = 1 / window.devicePixelRatio;
-    
-    canvas.width = Math.floor(document.documentElement.scrollWidth / zoomFactor);
-    canvas.height = Math.floor(document.documentElement.scrollHeight / zoomFactor);
+
+    let hasScroll = document.documentElement.scrollHeight > window.innerHeight || 
+                    document.documentElement.scrollWidth > window.innerWidth;
+
+    canvas.width = Math.floor((hasScroll ? document.documentElement.scrollWidth : window.innerWidth) / zoomFactor);
+    canvas.height = Math.floor((hasScroll ? document.documentElement.scrollHeight : window.innerHeight) / zoomFactor);
+
     initColumns();
 }
 
@@ -35,12 +39,12 @@ function spawnChar() {
 
 // Initialisierung der Spalten
 function initColumns() {
-    const numColumns = Math.floor(canvas.width / 15);
+    const numColumns = Math.floor(canvas.width / 25);
     columns.length = 0; 
     for (let i = 0; i < numColumns; i++) {
         columns.push({
             chars: [],
-            x: i * 15,  
+            x: i * 25,  
             y: Math.random() * canvas.height 
         });
     }
@@ -61,15 +65,15 @@ function updateColumns() {
 function draw() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.1)"; 
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.font = "20px monospace";
+    ctx.font = "30px monospace";
     ctx.fillStyle = "#00FF00"; 
 
     for (let col of columns) {
         for (let j = 0; j < col.chars.length; j++) {
-            ctx.fillText(col.chars[j], col.x, col.y + j * 20);
+            ctx.fillText(col.chars[j], col.x, col.y + j * 30);
         }
-        col.y += 20;
-        if (col.y > canvas.height) col.y = -20;
+        col.y += 30;
+        if (col.y > canvas.height) col.y = -30;
     }
 }
 
