@@ -22,8 +22,10 @@ function fixZoom() {
 
 /////////////   Background   ///////////////////////
 function resizeCanvas() {
+    canvas.style.width = "100vw";
+    canvas.style.height = "100vh";
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight; // Ganze Seitenhöhe nehmen
+    canvas.height = window.innerHeight;
     initColumns();
 }
 
