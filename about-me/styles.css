@@ -87,7 +87,7 @@ button.active::after {
 .container {
     width: 60%; /* Breite der Container */
     padding: 0px; /* Innerer Rand abstand */
-    margin: 8% 0; /* Abstand zwischen den Containern */
+    margin: 3% 0; /* Abstand zwischen den Containern */
     border-radius: 20px;
     background: #ffffff;
     font-family: Arial, sans-serif;
@@ -107,7 +107,7 @@ button.active::after {
 
 .container p{
     line-height: 1.6; /* Erhöht den Abstand zwischen den Zeilen */
-    font-size: 150%;
+    font-size: 130%;
     z-index: 2; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
 }
 
