@@ -86,7 +86,7 @@ button.active::after {
 /* Allgemeine Stile für die Container */
 .container {
     width: 60%; /* Breite der Container */
-    padding: 0px; /* Innerer Rand abstand */
+    padding: 1%; /* Innerer Rand abstand */
     margin: 1% 0; /* Abstand zwischen den Containern */
     border-radius: 20px;
     background: #ffffff;
