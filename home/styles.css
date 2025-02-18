@@ -119,7 +119,7 @@ button.active::after {
     border: none; /* Kein Rahmen */
     padding: 1% 3%; /* Höhe | Breite */
     border-radius: 25px; /* Abgerundete Ecken */
-    font-size: 200%; /* Schriftgröße */
+    font-size: 170%; /* Schriftgröße */
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
     top: 20%; /* Abstand zum oberen Inhalt */
     transition: background-color 0.3s ease; /* Animationseffekt für den Hintergrund */
@@ -135,7 +135,7 @@ button.active::after {
     background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
     border: 5px solid #000000;
     border-radius: 20%; /* Kleinere abgerundete Ecken */
-    padding: 15px; /* Innenabstand */
+    padding: 10%; /* Innenabstand */
 	width: 55%;
 	height: 25%;
     top: 75%; /* Vertikale Zentrierung */
@@ -147,7 +147,7 @@ button.active::after {
 
 .info-box h4 {
     position: relative;
-    font-size: 1.5em;
+    font-size: 150%;
     top: -35px;
     border-bottom: 2px solid black; /* Dicke und Farbe der Unterstreichung */
     display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
