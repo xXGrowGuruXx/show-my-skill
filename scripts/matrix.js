@@ -7,6 +7,18 @@ const canvas = document.getElementById('matrixCanvas');
 const ctx = canvas.getContext('2d');
 const columns = [];
 
+function fixZoom() {
+    let zoomFactor = 1 / window.devicePixelRatio;
+
+    if ("zoom" in document.body.style) {
+        document.body.style.zoom = zoomFactor; // Für Chrome & Co.
+    } else {
+        document.body.style.transform = `scale(${zoomFactor})`;
+        document.body.style.transformOrigin = "top left";
+        document.documentElement.style.overflow = "hidden"; // Fix für Scrollprobleme
+    }
+}
+
 function resizeCanvas() {
     canvas.width = document.documentElement.scrollWidth;
     canvas.height = document.documentElement.scrollHeight; // Ganze Seitenhöhe nehmen
@@ -57,8 +69,10 @@ function draw() {
     }
 }
 
+window.addEventListener("DOMContentLoaded", fixZoom);
 window.addEventListener("resize", resizeCanvas);
 window.addEventListener("load", () => {
+    fixZoom();
     resizeCanvas();
     setInterval(updateColumns, delay);
 });
