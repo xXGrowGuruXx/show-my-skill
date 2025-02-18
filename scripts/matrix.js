@@ -1,4 +1,4 @@
-const numColumns = 150; 
+const numColumns = 130; 
 const maxCharsPerColumn = 7; 
 const delay = 100; 
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
