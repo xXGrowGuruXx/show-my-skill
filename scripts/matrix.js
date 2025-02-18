@@ -8,10 +8,10 @@ const ctx = canvas.getContext('2d');
 const columns = [];
 
 function resizeCanvas() {
-    let zoomFactor = 1 / window.devicePixelRatio; // Der gleiche Faktor wie beim Zoom-Fix
+    let zoomFactor = 1 / window.devicePixelRatio; 
 
-    canvas.width = window.innerWidth * zoomFactor;
-    canvas.height = window.innerHeight * zoomFactor;
+    canvas.width = document.width * zoomFactor;
+    canvas.height = document.width * zoomFactor;
 
     initColumns();
 }
