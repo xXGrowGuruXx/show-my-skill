@@ -57,6 +57,10 @@ function draw() {
     }
 }
 
+window.addEventListener("DOMContentLoaded", function () {
+      document.body.style.zoom = "100%";
+  });
+
 window.addEventListener("resize", resizeCanvas);
 window.addEventListener("load", () => {
     resizeCanvas();
