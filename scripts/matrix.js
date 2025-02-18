@@ -20,8 +20,8 @@ function fixZoom() {
 }
 
 function resizeCanvas() {
-    canvas.width = document.documentElement.scrollWidth;
-    canvas.height = document.documentElement.scrollHeight; // Ganze Seitenhöhe nehmen
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight; // Ganze Seitenhöhe nehmen
     initColumns(); 
 }
 
