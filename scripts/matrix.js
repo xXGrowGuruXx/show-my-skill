@@ -23,21 +23,8 @@ function fixZoom() {
 function resizeCanvas() {
     let zoomFactor = 1 / window.devicePixelRatio;
 
-    // Berechne die sichtbare Breite und Höhe
-    let viewportWidth = document.documentElement.clientWidth;
-    let viewportHeight = document.documentElement.clientHeight;
-
-    // Berechne die Scrollgrößen
-    let scrollWidth = document.documentElement.scrollWidth;
-    let scrollHeight = document.documentElement.scrollHeight;
-
-    // Verhindere, dass ein kleiner Strich erscheint, indem du die Breite und Höhe auf volle Pixel aufrundest
-    let width = scrollWidth > viewportWidth ? scrollWidth : viewportWidth;
-    let height = scrollHeight > viewportHeight ? scrollHeight : viewportHeight;
-
-    // Setze die Canvas-Größe auf gerundete Werte
-    canvas.width = Math.ceil(width / zoomFactor);
-    canvas.height = Math.ceil(height / zoomFactor);
+    canvas.with = document.documentElement.scrollWidth / zoomFactor;
+    canvas.height = document.documentElement.scrollHeight / zoomFactor;
 
     initColumns();
 }
