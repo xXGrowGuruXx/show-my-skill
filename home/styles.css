@@ -101,12 +101,12 @@ button.active::after {
 }
 
 .hero h2 {
-    font-size: 3em; /* Erhöhe die Schriftgröße für h2 */
+    font-size: 230%; /* Schriftgröße */
     margin: 0; /* Entferne den Standardabstand */
 }
 
 .hero h3 {
-    font-size: 2em; /* Erhöhe die Schriftgröße für h3 */
+    font-size: 200%; /* Erhöhe die Schriftgröße für h3 */
     margin: 1% 0; /* Füge Abstand zwischen h2 und h3 hinzu */
 }
 

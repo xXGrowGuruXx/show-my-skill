@@ -1,8 +1,9 @@
+/* Grundstruktur für das Header-Element */
 header {
     display: flex; /* Layout als Flexbox */
     justify-content: space-between; /* Verteilung von container1 und container2 links/rechts */
     align-items: center; /* Zentriert die Inhalte vertikal innerhalb des Headers */
-    padding: 10px; /* Abstand um den Header herum */
+    padding: 1%; /* Abstand um den Header herum */
     background-color: #ffffff; /* Hintergrundfarbe des Headers */
     position: fixed; /* Fixiert das Header oben */
     top: 0; /* Positioniert den Header am oberen Rand */
@@ -11,6 +12,7 @@ header {
     z-index: 1000; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
 }
 
+/* Um sicherzustellen, dass der Inhalt unter dem Header nicht verdeckt wird */
 body {
     padding-top: 10%; /* Abstand hinzufügen, damit der Inhalt nicht vom Header überlappt wird */
     padding-bottom: 10%; /* Reserviert Platz für den Footer */
@@ -21,28 +23,29 @@ body {
 }
 
 .name {
-    margin-left: 0px;
-    width: 700px; /* Breite anpassen */
-    height: 65px; /* Höhe proportional skalieren */
+    margin-left: 0;
+    width: 45%; /* Breite */
+    height: auto; 
 }
 
 /* Styling für den zweiten Container (Buttons) */
 .menu {
     display: flex; /* Flexbox für die Buttons */
-    gap: 30px; /* Abstand zwischen den Buttons */
+    gap: 20%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
-	margin-right: 20px;
+	margin-right: 25%;
 }
 
 /* Styling für die Navigations-Buttons */
 button {
-    padding: 10px 20px; /* Innenabstand der Buttons */
+    padding: 10% 10%; /* Höhe | Breite */
+    white-space: nowrap; /* Verhindert das Umbruchverhalten */
     background-color: transparent; /* Kein Hintergrund */
     color: black; /* Textfarbe */
     border: none; /* Kein Rahmen */
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
     position: relative; /* Für die Platzierung der Linie */
-    font-size: 20px; /* Größe der Schrift */
+    font-size: 150%; /* Größe der Schrift */
     font-weight: bold; /* Fett gedruckt */
 }
 
@@ -51,10 +54,10 @@ button::after {
     content: ''; /* Leerer Inhalt für den Strich */
     display: block; /* Blockelement */
     width: 0; /* Startbreite: 0 */
-    height: 2px; /* Höhe des Strichs */
+    height: 7%; /* Höhe des Strichs */
     background: black; /* Farbe des Strichs */
     position: absolute; /* Absolute Positionierung */
-    bottom: -5px; /* Positionierung knapp unterhalb des Buttons */
+    bottom: -5%; /* Positionierung knapp unterhalb des Buttons */
     left: 0; /* Start von der linken Seite */
     transition: width 0.5s ease; /* Animationseffekt beim Hover */
 }
