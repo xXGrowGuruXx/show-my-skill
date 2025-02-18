@@ -8,12 +8,9 @@ const ctx = canvas.getContext('2d');
 const columns = [];
 
 function resizeCanvas() {
-    let zoomFactor = 1 / window.devicePixelRatio; 
-
-    canvas.width = window.width * zoomFactor;
-    canvas.height = window.height * zoomFactor;
-
-    initColumns();
+    canvas.width = document.documentElement.scrollWidth;
+    canvas.height = document.documentElement.scrollHeight; // Ganze Seitenhöhe nehmen
+    initColumns(); 
 }
 
 // Funktion, um zufällige Zeichen zu erzeugen
