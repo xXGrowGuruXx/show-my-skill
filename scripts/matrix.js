@@ -70,7 +70,10 @@ function draw() {
 }
 
 window.addEventListener("DOMContentLoaded", fixZoom);
-window.addEventListener("resize", resizeCanvas);
+window.addEventListener("resize", () => {
+    fixZoom();
+    resizeCanvas();
+});
 window.addEventListener("load", () => {
     fixZoom();
     resizeCanvas();
