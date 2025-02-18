@@ -96,7 +96,7 @@ button.active::after {
 }
 
 .container h2 {
-    font-size: 180%;
+    font-size: 220%;
     color: #000000;
     text-align: center;
     border-bottom: 5px solid black; /* Dicke und Farbe der Unterstreichung */
@@ -107,7 +107,7 @@ button.active::after {
 
 .container p{
     line-height: 1.6; /* Erhöht den Abstand zwischen den Zeilen */
-    font-size: 120%;
+    font-size: 180%;
     z-index: 2; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
 }
 
