@@ -33,7 +33,7 @@ body {
     display: flex; /* Flexbox für die Buttons */
     gap: 20%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
-	margin-right: 15%;
+	margin-right: 25%;
 }
 
 /* Styling für die Navigations-Buttons */
