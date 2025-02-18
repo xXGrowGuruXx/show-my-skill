@@ -23,8 +23,8 @@ function fixZoom() {
 function resizeCanvas() {
     let zoomFactor = 1 / window.devicePixelRatio;
 
-    canvas.width = Math.floor(document.documentElement.scrollWidth / zoomFactor);
-    canvas.height = Math.floor(document.documentElement.scrollHeight / zoomFactor);
+    canvas.width = Math.floor(window.innerWidth / zoomFactor);
+    canvas.height = Math.floor(window.innerHeight / zoomFactor);
 
     initColumns();
 }
