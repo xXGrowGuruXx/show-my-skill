@@ -177,6 +177,6 @@ footer {
 footer p {
     position: relative;
     margin: 0; /* Höhe */
-    font-size: 100%; /* Kleinere Schriftgröße */
-    letter-spacing: 20%; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
+    font-size: 130%; /* Kleinere Schriftgröße */
+    letter-spacing: 30%; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
 }
