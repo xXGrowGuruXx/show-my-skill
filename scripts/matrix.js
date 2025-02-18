@@ -22,10 +22,10 @@ function fixZoom() {
 
 /////////////   Background   ///////////////////////
 function resizeCanvas() {
-    canvas.style.width = "100vw";
-    canvas.style.height = "100vh";
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    let zoomFactor = 1 / window.devicePixelRatio;
+
+    canvas.width = window.innerWidth * zoomFactor;
+    canvas.height = window.innerHeight * zoomFactor;
     initColumns();
 }
 
