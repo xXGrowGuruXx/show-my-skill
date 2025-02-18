@@ -31,7 +31,7 @@ body {
 /* Styling für den zweiten Container (Buttons) */
 .menu {
     display: flex; /* Flexbox für die Buttons */
-    gap: 10%; /* Abstand zwischen den Buttons */
+    gap: 20%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
 	margin-right: 15%;
 }
@@ -45,7 +45,7 @@ button {
     border: none; /* Kein Rahmen */
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
     position: relative; /* Für die Platzierung der Linie */
-    font-size: 130%; /* Größe der Schrift */
+    font-size: 150%; /* Größe der Schrift */
     font-weight: bold; /* Fett gedruckt */
 }
 
