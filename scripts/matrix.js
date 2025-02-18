@@ -5,7 +5,6 @@ const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 const canvas = document.getElementById('matrixCanvas');
 const ctx = canvas.getContext('2d');
 const columns = [];
-const numColumns = Math.floor(canvas.width / 15);
 
 ///////////////     Layout Fixen  ////////////////////
 function fixZoom() {
@@ -24,8 +23,8 @@ function fixZoom() {
 function resizeCanvas() {
     let zoomFactor = 1 / window.devicePixelRatio;
     
-    canvas.width = Math.floor(window.innerWidth / zoomFactor);
-    canvas.height = Math.floor(window.innerHeight / zoomFactor);
+    canvas.width = Math.floor(document.documentElement.scrollWidth / zoomFactor);
+    canvas.height = Math.floor(document.documentElement.scrollHeight / zoomFactor);
     initColumns();
 }
 
@@ -36,6 +35,7 @@ function spawnChar() {
 
 // Initialisierung der Spalten
 function initColumns() {
+    const numColumns = Math.floor(canvas.width / 15);
     columns.length = 0; 
     for (let i = 0; i < numColumns; i++) {
         columns.push({
