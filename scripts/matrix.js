@@ -7,6 +7,7 @@ const canvas = document.getElementById('matrixCanvas');
 const ctx = canvas.getContext('2d');
 const columns = [];
 
+///////////////     Layout Fixen  ////////////////////
 function fixZoom() {
     let zoomFactor = 1 / window.devicePixelRatio;
 
@@ -15,14 +16,15 @@ function fixZoom() {
     } else {
         document.body.style.transform = `scale(${zoomFactor})`;
         document.body.style.transformOrigin = "top left";
-        document.documentElement.style.overflow = "hidden"; // Fix für Scrollprobleme
+        document.documentElement.style.overflow = "hidden";
     }
 }
 
+/////////////   Background   ///////////////////////
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight; // Ganze Seitenhöhe nehmen
-    initColumns(); 
+    initColumns();
 }
 
 // Funktion, um zufällige Zeichen zu erzeugen
