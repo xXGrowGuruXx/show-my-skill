@@ -31,7 +31,7 @@ body {
 /* Styling für den zweiten Container (Buttons) */
 .menu {
     display: flex; /* Flexbox für die Buttons */
-    gap: 20%; /* Abstand zwischen den Buttons */
+    gap: 15%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
 	margin-right: 25%;
 }
@@ -49,7 +49,7 @@ button {
     border: none; /* Kein Rahmen */
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
     position: relative; /* Für die Platzierung der Linie */
-    font-size: 150%; /* Größe der Schrift */
+    font-size: 170%; /* Größe der Schrift */
     font-weight: bold; /* Fett gedruckt */
 }
 
@@ -83,7 +83,7 @@ button.active::after {
 .hero {
     position: absolute; /* Relativ zur vorherigen Schicht */
     z-index: 2; /* Über das Pseudo-Element legen */
-    background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
+    background-color: rgb(255, 255, 255); /* Weiße Hintergrundfarbe mit Transparenz */
     border: 5px solid #000000;
     border-radius: 20%; /* Kleinere abgerundete Ecken */
     padding: 1%; /* Innenabstand */
@@ -138,7 +138,7 @@ button.active::after {
 .info-box {
 	position: absolute; /* Relativ zur vorherigen Schicht */
     z-index: 2; /* Über das Pseudo-Element legen */
-    background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
+    background-color: rgb(255, 255, 255); /* Weiße Hintergrundfarbe mit Transparenz */
     border: 5px solid #000000;
     border-radius: 20%; /* Kleinere abgerundete Ecken */
     padding: 1%; /* Innenabstand */
