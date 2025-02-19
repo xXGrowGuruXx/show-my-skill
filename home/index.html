@@ -6,6 +6,12 @@
     <title>Show My Skill - by xXGrowGuruXx</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        @font-face {
+            font-family: 'Vacaciones';
+            src: url('show-my-skill/font/Vacaciones-font-ffp-defharo.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
         canvas {
             position: fixed;
             top: 0;
@@ -20,7 +26,17 @@
     <canvas class="background" id="matrixCanvas"></canvas>
     
     <header>
-        <img class="name" src="/show-my-skill/icons/Logo.gif" alt="Logo">
+        <marquee 
+            class="name"
+            direction="left" 
+            behavior="scroll" 
+            scrollamount="2" 
+            scrolldelay="1" 
+            style="color:black; font-size: large; font-family: 'Vacaciones', sans-serif;"
+            onmouseover="this.stop();"
+            onmouseout="this.start();">
+            This Site will show you my Skills. Have Fun!
+        </marquee>
 
         <div class="menu">
             <a href="/show-my-skill/home/"><button class="active">Home</button></a>

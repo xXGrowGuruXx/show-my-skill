@@ -34,6 +34,7 @@ body {
     gap: 20%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
 	margin-right: 25%;
+    font-family: 'Vacaciones', sans-serif;
 }
 
 /* Styling für die Navigations-Buttons */
@@ -98,6 +99,7 @@ button.active::after {
     font-weight: bold; /* Text fett machen */
     z-index: 2; /* Über das Pseudo-Element legen */
     top: 5%; /* Vertikale Zentrierung */
+    font-family: 'Vacaciones', sans-serif;
 }
 
 .hero h2 {
@@ -143,6 +145,7 @@ button.active::after {
     transform: translate(-50%, -50%); /* Korrektur der Zentrierung */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für einen 3D-Effekt */
     text-align: center; /* Text zentriert */
+    font-family: 'Vacaciones', sans-serif;
 }
 
 .info-box h4 {
@@ -177,6 +180,7 @@ footer {
 footer p {
     position: relative;
     margin: 0; /* Höhe */
+    font-family: 'Vacaciones', sans-serif;
     font-size: 120%; /* Kleinere Schriftgröße */
     letter-spacing: 50%; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
 }
