@@ -163,8 +163,9 @@ button.active::after {
 
 .info-box p {
     position: relative;
-    font-size: 140%; /* Größere Schriftgröße für den Paragraphen-Text */
+    font-size: 160%; /* Größere Schriftgröße für den Paragraphen-Text */
     bottom: 50%;
+    line-height: 0.7;
 }
 
 /* Footer Styling */
