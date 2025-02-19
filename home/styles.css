@@ -104,8 +104,9 @@ button.active::after {
 }
 
 .hero h2 {
-    font-size: 250%; /* Schriftgröße */
+    font-size: 280%; /* Schriftgröße */
     margin: 0; /* Entferne den Standardabstand */
+    top: -10%;
 }
 
 .hero h3 {
@@ -153,7 +154,7 @@ button.active::after {
 
 .info-box h4 {
     position: relative;
-    font-size: 200%;
+    font-size: 220%;
     top: -20%;
     border-bottom: 2px solid black; /* Dicke und Farbe der Unterstreichung */
     display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
