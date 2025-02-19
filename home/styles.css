@@ -125,8 +125,8 @@ button.active::after {
     font-size: 170%; /* Schriftgröße */
     font-family: 'Vacaciones', sans-serif;
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
-    top: 10%; /* Abstand zum oberen Inhalt */
-    letter-spacing: 5px;
+    top: 5%; /* Abstand zum oberen Inhalt */
+    letter-spacing: 3px;
     transition: background-color 0.3s ease; /* Animationseffekt für den Hintergrund */
 }
 
@@ -184,5 +184,5 @@ footer p {
     position: relative;
     margin: 0; /* Höhe */
     font-size: 120%; /* Kleinere Schriftgröße */
-    letter-spacing: 5px; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
+    letter-spacing: 3px; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
 }
