@@ -31,9 +31,9 @@ body {
 /* Styling für den zweiten Container (Buttons) */
 .menu {
     display: flex; /* Flexbox für die Buttons */
-    gap: 15%; /* Abstand zwischen den Buttons */
+    gap: 10%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
-	margin-right: 25%;
+	margin-right: 15%;
 }
 
 .menu button {
