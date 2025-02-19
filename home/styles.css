@@ -33,7 +33,7 @@ body {
     display: flex; /* Flexbox für die Buttons */
     gap: 10%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
-	margin-right: 20%;
+	margin-right: 18%;
 }
 
 .menu button {
