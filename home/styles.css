@@ -106,6 +106,8 @@ button.active::after {
 .hero h2 {
     font-size: 280%; /* Schriftgröße */
     margin: 0; /* Entferne den Standardabstand */
+    border-bottom: 2px solid black; /* Dicke und Farbe der Unterstreichung */
+    display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
 }
 
 .hero h3 {
@@ -137,7 +139,7 @@ button.active::after {
 .info-box {
 	position: absolute; /* Relativ zur vorherigen Schicht */
     z-index: 2; /* Über das Pseudo-Element legen */
-    background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
+    background-color: rgb(255, 255, 255); /* Weiße Hintergrundfarbe mit Transparenz */
     border: 5px solid #000000;
     border-radius: 20%; /* Kleinere abgerundete Ecken */
     padding: 1%; /* Innenabstand */
@@ -161,8 +163,8 @@ button.active::after {
 
 .info-box p {
     position: relative;
-    font-size: 150%; /* Größere Schriftgröße für den Paragraphen-Text */
-    bottom: 40%;
+    font-size: 140%; /* Größere Schriftgröße für den Paragraphen-Text */
+    bottom: 50%;
 }
 
 /* Footer Styling */
