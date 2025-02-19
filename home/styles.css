@@ -153,7 +153,7 @@ button.active::after {
 
 .info-box h4 {
     position: relative;
-    font-size: 180%;
+    font-size: 200%;
     top: -20%;
     border-bottom: 2px solid black; /* Dicke und Farbe der Unterstreichung */
     display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
