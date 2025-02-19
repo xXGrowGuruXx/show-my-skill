@@ -34,6 +34,7 @@ body {
     gap: 20%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
 	margin-right: 25%;
+    font-family: 'Vacaciones', sans-serif;
 }
 
 /* Styling für die Navigations-Buttons */
@@ -101,8 +102,10 @@ button.active::after {
 }
 
 .hero h2 {
-    font-size: 280%; /* Schriftgröße */
+    font-size: 330%; /* Schriftgröße */
     margin: 0; /* Entferne den Standardabstand */
+    border-bottom: 2px solid black; /* Dicke und Farbe der Unterstreichung */
+    display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
 }
 
 .hero h3 {
