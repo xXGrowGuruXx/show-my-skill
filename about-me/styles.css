@@ -15,7 +15,7 @@ header {
 /* Um sicherzustellen, dass der Inhalt unter dem Header nicht verdeckt wird */
 body {
     padding-top: 10%; /* Abstand hinzufügen, damit der Inhalt nicht vom Header überlappt wird */
-    padding-bottom: 1%; /* Reserviert Platz für den Footer */
+    padding-bottom: 3%; /* Reserviert Platz für den Footer */
     transform: scale(calc(1 / var(--zoom-factor)));
     transform-origin: top left;
     width: calc(100% * var(--zoom-factor));
