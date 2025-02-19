@@ -126,7 +126,7 @@ button.active::after {
     font-family: 'Vacaciones', sans-serif;
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
     top: 10%; /* Abstand zum oberen Inhalt */
-    letter-spacing: 150%;
+    letter-spacing: 10px;
     transition: background-color 0.3s ease; /* Animationseffekt für den Hintergrund */
 }
 
