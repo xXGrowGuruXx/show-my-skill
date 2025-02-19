@@ -99,13 +99,13 @@ button.active::after {
     text-align: center; /* Text zentrieren */
     font-weight: bold; /* Text fett machen */
     z-index: 2; /* Über das Pseudo-Element legen */
-    top: 5%; /* Vertikale Zentrierung */
+    top: 2%; /* Vertikale Zentrierung */
     font-family: 'Vacaciones', sans-serif;
 }
 
 .hero h2 {
     font-size: 280%; /* Schriftgröße */
-    top: -5%;
+    margin: 0; /* Entferne den Standardabstand */
 }
 
 .hero h3 {
