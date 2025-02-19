@@ -14,8 +14,8 @@ header {
 
 /* Um sicherzustellen, dass der Inhalt unter dem Header nicht verdeckt wird */
 body {
-    padding-top: 8%; /* Abstand hinzufügen, damit der Inhalt nicht vom Header überlappt wird */
-    padding-bottom: 3%; /* Reserviert Platz für den Footer */
+    padding-top: 10%; /* Abstand hinzufügen, damit der Inhalt nicht vom Header überlappt wird */
+    padding-bottom: 10%; /* Reserviert Platz für den Footer */
     transform: scale(calc(1 / var(--zoom-factor)));
     transform-origin: top left;
     width: calc(100% * var(--zoom-factor));
@@ -31,9 +31,13 @@ body {
 /* Styling für den zweiten Container (Buttons) */
 .menu {
     display: flex; /* Flexbox für die Buttons */
-    gap: 20%; /* Abstand zwischen den Buttons */
+    gap: 10%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
-	margin-right: 25%;
+	margin-right: 18%;
+}
+
+.menu button {
+    font-family: 'Vacaciones', sans-serif;
 }
 
 /* Styling für die Navigations-Buttons */
@@ -45,7 +49,7 @@ button {
     border: none; /* Kein Rahmen */
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
     position: relative; /* Für die Platzierung der Linie */
-    font-size: 150%; /* Größe der Schrift */
+    font-size: 170%; /* Größe der Schrift */
     font-weight: bold; /* Fett gedruckt */
 }
 
