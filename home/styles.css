@@ -165,7 +165,6 @@ button.active::after {
     position: relative;
     font-size: 160%; /* Größere Schriftgröße für den Paragraphen-Text */
     bottom: 50%;
-    line-height: 0.7;
 }
 
 /* Footer Styling */
