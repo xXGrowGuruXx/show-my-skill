@@ -105,8 +105,7 @@ button.active::after {
 
 .hero h2 {
     font-size: 280%; /* Schriftgröße */
-    margin: 0; /* Entferne den Standardabstand */
-    top: -10%;
+    top: -5%;
 }
 
 .hero h3 {
