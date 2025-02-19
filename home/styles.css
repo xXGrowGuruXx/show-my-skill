@@ -47,6 +47,7 @@ button {
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
     position: relative; /* Für die Platzierung der Linie */
     font-size: 150%; /* Größe der Schrift */
+    font-family: 'Vacaciones', sans-serif;
     font-weight: bold; /* Fett gedruckt */
 }
 
@@ -80,7 +81,7 @@ button.active::after {
 .hero {
     position: absolute; /* Relativ zur vorherigen Schicht */
     z-index: 2; /* Über das Pseudo-Element legen */
-    background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
+    background-color: rgb(255, 255, 255);
     border: 5px solid #000000;
     border-radius: 20%; /* Kleinere abgerundete Ecken */
     padding: 1%; /* Innenabstand */
@@ -122,6 +123,7 @@ button.active::after {
     padding: 1% 3%; /* Höhe | Breite */
     border-radius: 25px; /* Abgerundete Ecken */
     font-size: 170%; /* Schriftgröße */
+    font-family: 'Vacaciones', sans-serif;
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
     top: 20%; /* Abstand zum oberen Inhalt */
     transition: background-color 0.3s ease; /* Animationseffekt für den Hintergrund */
@@ -180,7 +182,6 @@ footer {
 footer p {
     position: relative;
     margin: 0; /* Höhe */
-    font-family: 'Vacaciones', sans-serif;
     font-size: 120%; /* Kleinere Schriftgröße */
     letter-spacing: 50%; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
 }
