@@ -34,7 +34,6 @@ body {
     gap: 20%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
 	margin-right: 25%;
-    font-family: 'Vacaciones', sans-serif;
 }
 
 /* Styling für die Navigations-Buttons */
@@ -47,7 +46,6 @@ button {
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
     position: relative; /* Für die Platzierung der Linie */
     font-size: 150%; /* Größe der Schrift */
-    font-family: 'Vacaciones', sans-serif;
     font-weight: bold; /* Fett gedruckt */
 }
 
@@ -81,7 +79,7 @@ button.active::after {
 .hero {
     position: absolute; /* Relativ zur vorherigen Schicht */
     z-index: 2; /* Über das Pseudo-Element legen */
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
     border: 5px solid #000000;
     border-radius: 20%; /* Kleinere abgerundete Ecken */
     padding: 1%; /* Innenabstand */
@@ -99,19 +97,16 @@ button.active::after {
     text-align: center; /* Text zentrieren */
     font-weight: bold; /* Text fett machen */
     z-index: 2; /* Über das Pseudo-Element legen */
-    top: 2%; /* Vertikale Zentrierung */
-    font-family: 'Vacaciones', sans-serif;
+    top: 5%; /* Vertikale Zentrierung */
 }
 
 .hero h2 {
     font-size: 280%; /* Schriftgröße */
     margin: 0; /* Entferne den Standardabstand */
-    border-bottom: 2px solid black; /* Dicke und Farbe der Unterstreichung */
-    display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
 }
 
 .hero h3 {
-    font-size: 220%; /* Erhöhe die Schriftgröße für h3 */
+    font-size: 250%; /* Erhöhe die Schriftgröße für h3 */
     margin: 1% 0; /* Füge Abstand zwischen h2 und h3 hinzu */
 }
 
@@ -125,10 +120,8 @@ button.active::after {
     padding: 1% 3%; /* Höhe | Breite */
     border-radius: 25px; /* Abgerundete Ecken */
     font-size: 170%; /* Schriftgröße */
-    font-family: 'Vacaciones', sans-serif;
     cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
-    top: 5%; /* Abstand zum oberen Inhalt */
-    letter-spacing: 3px;
+    top: 20%; /* Abstand zum oberen Inhalt */
     transition: background-color 0.3s ease; /* Animationseffekt für den Hintergrund */
 }
 
@@ -139,7 +132,7 @@ button.active::after {
 .info-box {
 	position: absolute; /* Relativ zur vorherigen Schicht */
     z-index: 2; /* Über das Pseudo-Element legen */
-    background-color: rgb(255, 255, 255); /* Weiße Hintergrundfarbe mit Transparenz */
+    background-color: rgba(255, 255, 255, 0.7); /* Weiße Hintergrundfarbe mit Transparenz */
     border: 5px solid #000000;
     border-radius: 20%; /* Kleinere abgerundete Ecken */
     padding: 1%; /* Innenabstand */
@@ -150,12 +143,11 @@ button.active::after {
     transform: translate(-50%, -50%); /* Korrektur der Zentrierung */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Schatten für einen 3D-Effekt */
     text-align: center; /* Text zentriert */
-    font-family: 'Vacaciones', sans-serif;
 }
 
 .info-box h4 {
     position: relative;
-    font-size: 220%;
+    font-size: 180%;
     top: -20%;
     border-bottom: 2px solid black; /* Dicke und Farbe der Unterstreichung */
     display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
@@ -163,8 +155,8 @@ button.active::after {
 
 .info-box p {
     position: relative;
-    font-size: 160%; /* Größere Schriftgröße für den Paragraphen-Text */
-    bottom: 50%;
+    font-size: 150%; /* Größere Schriftgröße für den Paragraphen-Text */
+    bottom: 40%;
 }
 
 /* Footer Styling */
@@ -186,5 +178,5 @@ footer p {
     position: relative;
     margin: 0; /* Höhe */
     font-size: 120%; /* Kleinere Schriftgröße */
-    letter-spacing: 3px; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
+    letter-spacing: 50%; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
 }
