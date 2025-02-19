@@ -34,6 +34,9 @@ body {
     gap: 20%; /* Abstand zwischen den Buttons */
     align-items: center; /* Vertikale Zentrierung der Buttons */
 	margin-right: 25%;
+}
+
+.menu button {
     font-family: 'Vacaciones', sans-serif;
 }
 
