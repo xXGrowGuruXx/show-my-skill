@@ -10,18 +10,14 @@ const columns = [];
 function fixZoom() {
     let zoomFactor = 1 / window.devicePixelRatio;
 
-    try 
-    {
-        alert("ZoomFaktor erkannt und berechnet.");
-        document.body.style.zoom = zoomFactor;
-    } 
-    catch (error) 
-    {
-        alert("ZoomFaktor konnte nicht ermittelt werden, du nutzt Firefox korrekt?")
+    if (navigator.userAgent.toLowerCase().includes("firefox")) {
+        alert("Firefox erkannt - nutze transform!");
 
         document.body.style.transform = `scale(${zoomFactor})`;
         document.body.style.transformOrigin = "top left";
-        document.documentElement.style.overflow = "hidden";
+
+    } else {
+        document.body.style.zoom = zoomFactor;
     }
 }
 
