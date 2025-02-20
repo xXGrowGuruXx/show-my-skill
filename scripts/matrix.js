@@ -9,18 +9,15 @@ const columns = [];
 ///////////////     Layout Fixen  ////////////////////
 function fixZoom() {
     let zoomFactor = 1 / window.devicePixelRatio;
-    console.log("Zoom-Faktor erkannt:", zoomFactor);
 
     if (navigator.userAgent.toLowerCase().includes("firefox")) {
-        console.log("Firefox erkannt – nutze transform!");
-
         document.body.style.transform = `scale(${zoomFactor})`;
         document.body.style.transformOrigin = "top left";
 
-        // Verhindert, dass Firefox das Layout anpasst
-        document.body.style.width = `${100 * zoomFactor}vw`;
-        document.body.style.height = `${100 * zoomFactor}vh`;
-        document.documentElement.style.overflow = "hidden";
+        // **WICHTIG: Erzwungene Fixierung gegen Firefox-Autoverhalten**
+        document.body.style.position = "fixed";
+        document.body.style.top = "0";
+        document.body.style.left = "0";
     } else {
         document.body.style.zoom = zoomFactor;
     }
