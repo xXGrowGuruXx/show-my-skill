@@ -105,7 +105,7 @@ body {
     z-index: 2; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
 }
 .container p {
-    font-size: 150%;
+    font-size: 120%;
     color: #000000;
     text-align: left;
     z-index: 2; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
@@ -119,13 +119,13 @@ body {
 }
 
 .foto {
-    position: absolute;
+    position: relative;
     border: 5px solid black;
     border-radius: 20px;
-    width: 15%;
-    height: 35%;
-    top: 40%;
-    left: 60%;
+    width: 25%;
+    height: 50%;
+    margin-top: -30%;
+    margin-left: 65%;
     z-index: 3;
     pointer-events: none;
 }
@@ -145,6 +145,7 @@ body {
     width: 90%;
     height: 70%;
     resize: none;
+    font-size: 150%;
 }
 
 .kontaktFeld button {
