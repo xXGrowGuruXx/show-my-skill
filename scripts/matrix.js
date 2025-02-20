@@ -16,6 +16,10 @@ function fixZoom() {
         document.body.style.transform = `scale(${zoomFactor})`;
         document.body.style.transformOrigin = "top left";
 
+        // Layout-Probleme fixen
+        document.body.style.width = `${100 / zoomFactor}%`;
+        document.body.style.height = `${100 / zoomFactor}%`;
+        document.documentElement.style.overflow = "hidden";
     } else {
         document.body.style.zoom = zoomFactor;
     }
