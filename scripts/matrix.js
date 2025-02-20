@@ -10,14 +10,11 @@ const columns = [];
 function fixZoom() {
     let zoomFactor = 1 / window.devicePixelRatio;
 
-    if (navigator.userAgent.toLowerCase().includes("firefox")) {
+    if (navigator.userAgent.toLowerCase().includes("firefox")) 
+    {
+        window.devicePixelRatio = 1;
         document.body.style.transform = `scale(${zoomFactor})`;
         document.body.style.transformOrigin = "top left";
-
-        // **WICHTIG: Erzwungene Fixierung gegen Firefox-Autoverhalten**
-        document.body.style.position = "fixed";
-        document.body.style.top = "0";
-        document.body.style.left = "0";
     } else {
         document.body.style.zoom = zoomFactor;
     }
