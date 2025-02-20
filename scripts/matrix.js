@@ -12,7 +12,7 @@ function fixZoom() {
 
     if (navigator.userAgent.toLowerCase().includes("firefox")) 
     {
-        document.body.style.transform = `scale(1)`;
+        document.body.style.transform = `scale(0.8)`;
         document.body.style.transformOrigin = "top left";
     } else {
         document.body.style.zoom = zoomFactor;
@@ -35,10 +35,17 @@ function resizeCanvas() {
     let width = scrollWidth > viewportWidth ? scrollWidth : viewportWidth;
     let height = scrollHeight > viewportHeight ? scrollHeight : viewportHeight;
 
-    // Setze die Canvas-Größe auf gerundete Werte
-    canvas.width = Math.ceil(width / zoomFactor);
-    canvas.height = Math.ceil(height / zoomFactor);
-
+    if (navigator.userAgent.toLowerCase().includes("firefox")) 
+    {
+        canvas.width = Math.ceil(width / 1);
+        canvas.height = Math.ceil(height / 1);
+    }
+    else
+    {
+        // Setze die Canvas-Größe auf gerundete Werte
+        canvas.width = Math.ceil(width / zoomFactor);
+        canvas.height = Math.ceil(height / zoomFactor);
+    }
     initColumns();
 }
 
