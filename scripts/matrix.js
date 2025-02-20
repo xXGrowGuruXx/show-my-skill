@@ -12,7 +12,7 @@ function fixZoom() {
 
     if (navigator.userAgent.toLowerCase().includes("firefox")) 
     {
-        document.body.style.width = `${100 * zoomFactor}vw`;
+        document.body.style.width = `${100 * zoomFactor}%`;
         document.body.style.transform = `scale(0.8)`;
         document.body.style.transformOrigin = "top left";
     } else {
