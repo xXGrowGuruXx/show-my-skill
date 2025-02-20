@@ -8,14 +8,17 @@ const columns = [];
 
 ///////////////     Layout Fixen  ////////////////////
 function fixZoom() {
-    let zoomFactor = 1 / window.devicePixelRatio;
+    let windowPixel = 1 / window.devicePixelRatio;
 
-    if ("zoom" in document.body.style) {
-        document.body.style.zoom = zoomFactor; // Für Chrome & Co.
-    } else {
-        document.body.style.transform = `scale(${zoomFactor})`;
-        document.body.style.transformOrigin = "top left";
-        document.documentElement.style.overflow = "hidden";
+    if (windowPixel != 1) 
+    {
+        window.devicePixelRatio = 1; 
+        document.body.style.zoom = windowPixel;  
+    } 
+    else 
+    {
+        let zoomFactor = 1 / window.devicePixelRatio;
+        document.body.style.zoom = zoomFactor;
     }
 }
 
