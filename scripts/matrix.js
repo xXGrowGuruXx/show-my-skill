@@ -12,7 +12,7 @@ function fixZoom() {
 
     if (navigator.userAgent.toLowerCase().includes("firefox")) 
     {
-        document.body.style.width = `${100 * zoomFactor}%`;
+        alert("Diese Seite funktioniert im FireFox Browser nicht ordnungsgemäß!\nBitte verwende Opera, Chrome oder Edge!")
         document.body.style.transform = `scale(1)`;
         document.body.style.transformOrigin = "top left";
     } else {
