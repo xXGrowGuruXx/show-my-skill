@@ -8,17 +8,19 @@ const columns = [];
 
 ///////////////     Layout Fixen  ////////////////////
 function fixZoom() {
-    let windowPixel = 1 / window.devicePixelRatio;
+    let zoomFactor = 1 / window.devicePixelRatio;
 
-    if (windowPixel != 1) 
+    try 
     {
-        window.devicePixelRatio = 1; 
-        document.body.style.zoom = windowPixel;  
-    } 
-    else 
-    {
-        let zoomFactor = 1 / window.devicePixelRatio;
         document.body.style.zoom = zoomFactor;
+    } 
+    catch (error) 
+    {
+        alert("ZoomFaktor konnte nicht ermittelt werden, du nutzt Firefox korrekt?")
+
+        document.body.style.transform = `scale(${zoomFactor})`;
+        document.body.style.transformOrigin = "top left";
+        document.documentElement.style.overflow = "hidden";
     }
 }
 
