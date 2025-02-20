@@ -10,17 +10,17 @@ const columns = [];
 function fixZoom() {
     let zoomFactor = 1 / window.devicePixelRatio;
 
-    if (navigator.userAgent.toLowerCase().includes("firefox")) {
-        alert("Firefox erkannt - nutze transform!");
-
+    if (navigator.userAgent.toLowerCase().includes("firefox")) 
+    {
         document.body.style.transform = `scale(${zoomFactor})`;
         document.body.style.transformOrigin = "top left";
 
         // Layout-Probleme fixen
         document.body.style.width = `${100 / zoomFactor}%`;
         document.body.style.height = `${100 / zoomFactor}%`;
-        document.documentElement.style.overflow = "hidden";
-    } else {
+    } 
+    else 
+    {
         document.body.style.zoom = zoomFactor;
     }
 }
