@@ -12,6 +12,7 @@ function fixZoom() {
 
     try 
     {
+        alert("ZoomFaktor erkannt und berechnet.");
         document.body.style.zoom = zoomFactor;
     } 
     catch (error) 
@@ -102,3 +103,7 @@ window.addEventListener("load", () => {
     resizeCanvas();
     setInterval(updateColumns, delay);
 });
+// Dynamische Erkennung für devicePixelRatio-Änderungen in Firefox
+if (window.matchMedia) {
+    window.matchMedia("(resolution: 1dppx)").addEventListener("change", fixZoom);
+}
