@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show My Skill - by xXGrowGuruXx</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'Vacaciones';
+            src: url('/show-my-skill/font/Vacaciones-font-ffp-defharo.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <canvas class="background" id="matrixCanvas"></canvas>
+
+    <header>
+        <marquee 
+            class="name"
+            direction="left" 
+            behavior="scroll" 
+            scrollamount="5" 
+            scrolldelay="1" 
+            style="color:black; font-size: 500%; font-family: 'Vacaciones', sans-serif;"
+            onmouseover="this.stop();"
+            onmouseout="this.start();">
+            This Site will show you my Skills. Have Fun!
+        </marquee>
+
+        <div class="menu">
+            <a href="/show-my-skill/home/"><button>Home</button></a>
+            <a href="/show-my-skill/projects/"><button class="active">Projects</button></a>
+            <a href="/show-my-skill/time-line/"><button>Time Line</button></a>
+            <a href="/show-my-skill/about-me/"><button>About Me</button></a>
+            <a href="/show-my-skill/kontakt/"><button>Kontakt</button></a>
+        </div>
+        
+    </header>
+	
+    <main>
+        <!-- Lebenslauf -->
+        <div class="projecte">
+            <!-- Persönliche Info -->
+            <div class="container website">
+                <h2>Website</h2>
+                <p>
+                    <strong>Nutzen:</strong> Diese Website ist entstanden um zu zeigen was ich kann.<br>
+                    <strong>Sprachen:</strong> HTML, css, js
+                </p>
+            </div>
+    
+            <!-- Kenntnisse -->
+            <div class="container winInstall">
+                <h2>Ausbildung</h2>
+                <p>
+                    <strong>Nutzen:</strong>Automatisierung von =><br>
+                    - Windows Installation<br>
+                    - Wi-Fi Konfiguration
+                    - Driver Installation
+                    - Installation von Standart-Programmen wie Browser und Office-Programme
+                    - Installation von zugeschnittener TeamViewer Version
+                    - User Import
+                    - Default User setzen
+                </p>
+                <button id="show_winInstall">show WinInstall =></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer bleibt auf jeder Seite gleich -->
+    <footer>
+        <p>Show My Skill is created by xXGrowGuruXx | &copy; CopyRight 2025</p>
+    </footer>
+    <script src="/show-my-skill/scripts/matrix.js"></script>
+</body>
+</html>
