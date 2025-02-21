@@ -1,0 +1,150 @@
+/* Grundstruktur für das Header-Element */
+header {
+    display: flex; /* Layout als Flexbox */
+    justify-content: space-between; /* Verteilung von container1 und container2 links/rechts */
+    align-items: center; /* Zentriert die Inhalte vertikal innerhalb des Headers */
+    padding: 1%; /* Abstand um den Header herum */
+    background-color: #ffffff; /* Hintergrundfarbe des Headers */
+    position: fixed; /* Fixiert das Header oben */
+    top: 0; /* Positioniert den Header am oberen Rand */
+    left: 0; /* Setzt den Header auf die linke Seite */
+    width: 100%; /* Stellt sicher, dass der Header die gesamte Breite abdeckt */
+    z-index: 1000; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
+}
+
+/* Um sicherzustellen, dass der Inhalt unter dem Header nicht verdeckt wird */
+body {
+    padding-top: 8%; /* Abstand hinzufügen, damit der Inhalt nicht vom Header überlappt wird */
+    padding-bottom: 3%; /* Reserviert Platz für den Footer */
+    transform: scale(calc(1 / var(--zoom-factor)));
+    transform-origin: top left;
+    width: calc(100% * var(--zoom-factor));
+    height: calc(100% * var(--zoom-factor));
+}
+
+.name {
+    margin-left: 0;
+    width: 45%; /* Breite */
+    height: auto; 
+}
+
+/* Styling für den zweiten Container (Buttons) */
+.menu {
+    display: flex; /* Flexbox für die Buttons */
+    gap: 10%; /* Abstand zwischen den Buttons */
+    align-items: center; /* Vertikale Zentrierung der Buttons */
+	margin-right: 18%;
+}
+
+.menu button {
+    font-family: 'Vacaciones', sans-serif;
+}
+
+/* Styling für die Navigations-Buttons */
+button {
+    padding: 10% 10%; /* Höhe | Breite */
+    white-space: nowrap; /* Verhindert das Umbruchverhalten */
+    background-color: transparent; /* Kein Hintergrund */
+    color: black; /* Textfarbe */
+    border: none; /* Kein Rahmen */
+    cursor: pointer; /* Zeigt einen Zeiger beim Hovern */
+    position: relative; /* Für die Platzierung der Linie */
+    font-size: 170%; /* Größe der Schrift */
+    font-weight: bold; /* Fett gedruckt */
+}
+
+/* Unterer Strich, der beim Hover sichtbar wird */
+button::after {
+    content: ''; /* Leerer Inhalt für den Strich */
+    display: block; /* Blockelement */
+    width: 0; /* Startbreite: 0 */
+    height: 7%; /* Höhe des Strichs */
+    background: black; /* Farbe des Strichs */
+    position: absolute; /* Absolute Positionierung */
+    bottom: -5%; /* Positionierung knapp unterhalb des Buttons */
+    left: 0; /* Start von der linken Seite */
+    transition: width 0.5s ease; /* Animationseffekt beim Hover */
+}
+
+/* Hover-Effekt für den Strich */
+button:hover::after {
+    width: 100%; /* Vollständige Breite beim Hover */
+}
+
+/* Styling für den aktiven Button (z. B. HOME als Standardseite) */
+button.active::after {
+    width: 100%; /* Der Strich ist permanent sichtbar */
+}
+
+.background {
+    z-index: 0;
+}
+
+.lebenslauf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Allgemeine Stile für die Container */
+.container {
+    width: 60%; /* Breite der Container */
+    padding: 1%; /* Innerer Rand abstand */
+    margin: 0.5% 0; /* Abstand zwischen den Containern */
+    border-radius: 20px;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    z-index: 1; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
+}
+
+.container h2 {
+    font-size: 200%;
+    color: #000000;
+    text-align: center;
+    border-bottom: 5px solid black; /* Dicke und Farbe der Unterstreichung */
+    display: inline-block; /* Damit sich die Linie nur auf den Text bezieht */
+    font-weight: bold; /* Fettgedruckt */
+    z-index: 2; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
+}
+
+.container p{
+    line-height: 1.6; /* Erhöht den Abstand zwischen den Zeilen */
+    font-size: 130%;
+    z-index: 2; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
+}
+
+/* Persönliche Info */
+.beruf {
+    border: 5px solid #000000;
+    box-shadow: 5px 5px 15px rgba(50, 50, 50, 0.4);
+}
+
+/* Kenntnisse */
+.ausbildung {
+    border: 5px solid #000000;
+    box-shadow: 5px 5px 15px rgba(50, 50, 50, 0.4);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #111; /* Dunkler Hintergrund, passend zum Header */
+    color: white; /* Weißer Text */
+    text-align: center; /* Zentriert den Text im Footer */
+    padding: 1%; /* Abstand innerhalb des Footers */
+    position: fixed;
+    bottom: 0; /*Fixiert den footer am unteren rand */
+    left: 0; /* Sicherstellen, dass der Footer bis zum linken Rand geht */
+    right: 0; /* Sicherstellen, dass der Footer bis zum rechten Rand geht */
+    width: 100%; /* Stellt sicher, dass der Footer die gesamte Breite einnimmt */
+    z-index: 999; /* Über allem anderen, falls nötig */
+    box-sizing: border-box; /* Damit Padding nicht zur Breite addiert wird */
+}
+
+footer p {
+    position: relative;
+    margin: 0; /* Höhe */
+    font-size: 120%; /* Kleinere Schriftgröße */
+    letter-spacing: 50%; /* Leicht erweiterter Buchstabenabstand für Lesbarkeit */
+}
