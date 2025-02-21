@@ -141,14 +141,39 @@ main {
 
 .kontaktFeld h2 {
     position: relative;
-    margin-top: 0%;
+    margin: 0%;
 }
+
+.kontaktFeld input {
+    margin: 5%;
+}
+
+.nameInput {
+    position: relative;
+    right: 10%;
+    font-size: 130%;
+    border: 5px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.mailInput {
+    position: relative;
+    left: 10%;
+    font-size: 130%;
+    border: 5px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
 .kontakt textarea {
     top: 5%;
     width: 90%;
-    height: 70%;
+    height: 50%;
     resize: none;
-    font-size: 150%;
+    font-size: 130%;
+    border: 5px solid black;
+    border-radius: 20px;
 }
 
 .kontaktFeld button {
