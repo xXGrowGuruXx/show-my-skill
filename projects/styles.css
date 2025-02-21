@@ -38,10 +38,6 @@ body {
 
 .menu button {
     font-family: 'Vacaciones', sans-serif;
-}
-
-/* Styling für die Navigations-Buttons */
-button {
     padding: 10% 10%; /* Höhe | Breite */
     white-space: nowrap; /* Verhindert das Umbruchverhalten */
     background-color: transparent; /* Kein Hintergrund */
@@ -54,7 +50,7 @@ button {
 }
 
 /* Unterer Strich, der beim Hover sichtbar wird */
-button::after {
+.menu button::after {
     content: ''; /* Leerer Inhalt für den Strich */
     display: block; /* Blockelement */
     width: 0; /* Startbreite: 0 */
@@ -67,7 +63,7 @@ button::after {
 }
 
 /* Hover-Effekt für den Strich */
-button:hover::after {
+.menu button:hover::after {
     width: 100%; /* Vollständige Breite beim Hover */
 }
 
@@ -125,6 +121,38 @@ button.active::after {
 .winInstall {
     border: 5px solid #000000;
     box-shadow: 5px 5px 15px rgba(50, 50, 50, 0.4);
+}
+
+.winInstall button {
+    position: relative;
+    width: 30%;
+    height: 10%;
+    padding: 1%;
+    font-size: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 5px solid black;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.winInstall button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.winInstall button::after {
+    position: relative;
+    content: "→";
+    font-size: 150%;
+    margin-left: 10%;
+    transition: margin-left 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+.winInstall button:hover::after {
+    margin-left: 15%;
 }
 
 /* Footer Styling */
