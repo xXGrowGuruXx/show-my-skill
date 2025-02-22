@@ -24,6 +24,8 @@ function fixZoom() {
 /////////////   Background   ///////////////////////
 function resizeCanvas() {
     let zoomFactor = 1 / window.devicePixelRatio;
+    let aspectRatio = window.innerWidth / window.innerHeight;
+    let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio);
 
     // Berechne die sichtbare Breite und Höhe
     let viewportWidth = document.documentElement.clientWidth;
@@ -45,8 +47,8 @@ function resizeCanvas() {
     else
     {
         // Setze die Canvas-Größe auf gerundete Werte
-        canvas.width = Math.ceil(width / zoomFactor);
-        canvas.height = Math.ceil(height / zoomFactor);
+        canvas.width = Math.ceil(width / adjustedZoom);
+        canvas.height = Math.ceil(height / adjustedZoom);
     }
     initColumns();
 }
