@@ -8,17 +8,23 @@ const columns = [];
 
 ///////////////     Layout Fixen  ////////////////////
 function fixZoom() {
-    let zoomFactor = 1 / window.devicePixelRatio;
-    let aspectRatio = window.innerWidth / window.innerHeight;
+    let systemZoom = window.devicePixelRatio; // System-Zoom (z.B. 100%, 125%)
+    let browserZoom = window.outerWidth / window.innerWidth; // Browser-Zoom
+    let zoomFactor = 1 / (systemZoom * browserZoom); // Gesamt-Zoom-Faktor
+    let aspectRatio = window.innerWidth / window.innerHeight; // Bildverhältnis
 
     let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio); 
-        document.body.style.zoom = adjustedZoom;
+
+    document.body.style.zoom = adjustedZoom;
 }
 
 /////////////   Background   ///////////////////////
 function resizeCanvas() {
-    let zoomFactor = 1 / window.devicePixelRatio;
-    let aspectRatio = window.innerWidth / window.innerHeight;
+    let systemZoom = window.devicePixelRatio; // System-Zoom (z.B. 100%, 125%)
+    let browserZoom = window.outerWidth / window.innerWidth; // Browser-Zoom
+    let zoomFactor = 1 / (systemZoom * browserZoom); // Gesamt-Zoom-Faktor
+    let aspectRatio = window.innerWidth / window.innerHeight; // Bildverhältnis
+    
     let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio);
 
     // Berechne die sichtbare Breite und Höhe
