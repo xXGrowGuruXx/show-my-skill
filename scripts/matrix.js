@@ -8,24 +8,54 @@ const columns = [];
 
 ///////////////     Layout Fixen  ////////////////////
 function fixZoom() {
-    let systemZoom = window.devicePixelRatio; // System-Zoom (z.B. 100%, 125%)
-    let browserZoom = window.outerWidth / window.innerWidth; // Browser-Zoom
-    let zoomFactor = 1 / (systemZoom * browserZoom); // Gesamt-Zoom-Faktor
-    let aspectRatio = window.innerWidth / window.innerHeight; // Bildverhältnis
-
-    let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio); 
-
+    // 1. System-Zoom (DPI und Geräteskalierung)
+    let systemZoom = window.devicePixelRatio; // Verhältnis von Pixeln (z.B. Retina-Displays)
+    
+    // 2. Browser-Zoom (Verhältnis der Fenstergrößen)
+    let browserZoom = window.outerWidth / window.innerWidth; // Wie stark der Browser zoomt
+    
+    // 3. Bildschirmverhältnis (Breite zu Höhe)
+    let aspectRatio = window.innerWidth / window.innerHeight; // Wenn 16:9, 16:10, etc.
+    
+    // 4. DPI-Skalierung des Systems (DPI-Änderungen durch den Bildschirm)
+    let dpiScale = window.screen.width / window.innerWidth; // DPI-Skalierung des Geräts
+    
+    // 5. Bildschirmauflösung (optional, wenn du genauere DPI-Werte willst)
+    let screenWidth = window.screen.width;  // Physische Breite des Bildschirms
+    let screenHeight = window.screen.height; // Physische Höhe des Bildschirms
+    
+    // 6. Berechnung des Zooms unter Berücksichtigung der Bildschirmauflösung (DPI und Auflösung)
+    let resolutionFactor = (screenWidth * screenHeight) / (window.innerWidth * window.innerHeight);
+    
+    // Berechnung des angepassten Zoom-Faktors unter Berücksichtigung aller Faktoren:
+    let adjustedZoom = (1 / systemZoom) * (1 / browserZoom) * (aspectRatio > 1 ? 1 : aspectRatio) * dpiScale * resolutionFactor;
+    
     document.body.style.zoom = adjustedZoom;
 }
 
 /////////////   Background   ///////////////////////
 function resizeCanvas() {
-    let systemZoom = window.devicePixelRatio; // System-Zoom (z.B. 100%, 125%)
-    let browserZoom = window.outerWidth / window.innerWidth; // Browser-Zoom
-    let zoomFactor = 1 / (systemZoom * browserZoom); // Gesamt-Zoom-Faktor
-    let aspectRatio = window.innerWidth / window.innerHeight; // Bildverhältnis
+    // 1. System-Zoom (DPI und Geräteskalierung)
+    let systemZoom = window.devicePixelRatio; // Verhältnis von Pixeln (z.B. Retina-Displays)
     
-    let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio);
+    // 2. Browser-Zoom (Verhältnis der Fenstergrößen)
+    let browserZoom = window.outerWidth / window.innerWidth; // Wie stark der Browser zoomt
+    
+    // 3. Bildschirmverhältnis (Breite zu Höhe)
+    let aspectRatio = window.innerWidth / window.innerHeight; // Wenn 16:9, 16:10, etc.
+    
+    // 4. DPI-Skalierung des Systems (DPI-Änderungen durch den Bildschirm)
+    let dpiScale = window.screen.width / window.innerWidth; // DPI-Skalierung des Geräts
+    
+    // 5. Bildschirmauflösung (optional, wenn du genauere DPI-Werte willst)
+    let screenWidth = window.screen.width;  // Physische Breite des Bildschirms
+    let screenHeight = window.screen.height; // Physische Höhe des Bildschirms
+    
+    // 6. Berechnung des Zooms unter Berücksichtigung der Bildschirmauflösung (DPI und Auflösung)
+    let resolutionFactor = (screenWidth * screenHeight) / (window.innerWidth * window.innerHeight);
+    
+    // Berechnung des angepassten Zoom-Faktors unter Berücksichtigung aller Faktoren:
+    let adjustedZoom = (1 / systemZoom) * (1 / browserZoom) * (aspectRatio > 1 ? 1 : aspectRatio) * dpiScale * resolutionFactor;
 
     // Berechne die sichtbare Breite und Höhe
     let viewportWidth = document.documentElement.clientWidth;
