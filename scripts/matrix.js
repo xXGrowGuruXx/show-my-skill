@@ -33,17 +33,10 @@ function resizeCanvas() {
     let width = scrollWidth > viewportWidth ? scrollWidth : viewportWidth;
     let height = scrollHeight > viewportHeight ? scrollHeight : viewportHeight;
 
-    if (navigator.userAgent.toLowerCase().includes("firefox")) 
-    {
-        canvas.width = Math.ceil(width / 1);
-        canvas.height = Math.ceil(height / 1);
-    }
-    else
-    {
-        // Setze die Canvas-Größe auf gerundete Werte
-        canvas.width = Math.ceil(width / adjustedZoom);
-        canvas.height = Math.ceil(height / adjustedZoom);
-    }
+    // Setze die Canvas-Größe auf gerundete Werte
+    canvas.width = Math.ceil(width / adjustedZoom);
+    canvas.height = Math.ceil(height / adjustedZoom);
+    
     initColumns();
 }
 
