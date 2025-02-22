@@ -11,14 +11,8 @@ function fixZoom() {
     let zoomFactor = 1 / window.devicePixelRatio;
     let aspectRatio = window.innerWidth / window.innerHeight;
 
-    if (navigator.userAgent.toLowerCase().includes("firefox")) {
-        alert("Diese Seite funktioniert im FireFox Browser nicht ordnungsgemäß!\nBitte verwende Opera, Chrome oder Edge!");
-        let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio); 
+    let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio); 
         document.body.style.zoom = adjustedZoom;
-    } else {
-        let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio); 
-        document.body.style.zoom = adjustedZoom;
-    }
 }
 
 /////////////   Background   ///////////////////////
