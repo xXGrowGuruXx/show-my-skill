@@ -9,14 +9,15 @@ const columns = [];
 ///////////////     Layout Fixen  ////////////////////
 function fixZoom() {
     let zoomFactor = 1 / window.devicePixelRatio;
+    let aspectRatio = window.innerWidth / window.innerHeight;
 
-    if (navigator.userAgent.toLowerCase().includes("firefox")) 
-    {
-        alert("Diese Seite funktioniert im FireFox Browser nicht ordnungsgemäß!\nBitte verwende Opera, Chrome oder Edge!")
-        document.body.style.transform = `scale(1)`;
-        document.body.style.transformOrigin = "top left";
+    if (navigator.userAgent.toLowerCase().includes("firefox")) {
+        alert("Diese Seite funktioniert im FireFox Browser nicht ordnungsgemäß!\nBitte verwende Opera, Chrome oder Edge!");
+        let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio); 
+        document.body.style.zoom = adjustedZoom;
     } else {
-        document.body.style.zoom = zoomFactor;
+        let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio); 
+        document.body.style.zoom = adjustedZoom;
     }
 }
 
