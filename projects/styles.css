@@ -128,6 +128,11 @@ button.active::after {
     box-shadow: 5px 5px 15px rgba(50, 50, 50, 0.4);
 }
 
+.biblio {
+    border: 5px solid #000000;
+    box-shadow: 5px 5px 15px rgba(50, 50, 50, 0.4);
+}
+
 /* Footer Styling */
 footer {
     background-color: #111; /* Dunkler Hintergrund, passend zum Header */
