@@ -9,19 +9,14 @@ const columns = [];
 ///////////////     Layout Fixen  ////////////////////
 function fixZoom()
 {
-    let zoomFactor = 1 / window.devicePixelRatio;
-    let aspectRatio = window.innerWidth / window.innerHeight;
-
-    let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio); 
-    document.body.style.zoom = adjustedZoom;
+    let zoomFactor = 1 / window.devicePixelRatio; 
+    document.body.style.zoom = zoomFactor;
 }
 
 /////////////   Background   ///////////////////////
 function resizeCanvas()
 {
-    let zoomFactor = 1 / window.devicePixelRatio;
-    let aspectRatio = window.innerWidth / window.innerHeight;
-    let adjustedZoom = zoomFactor * (aspectRatio > 1 ? 1 : aspectRatio);
+    let zoomFactor = 1 / window.devicePixelRatio; 
 
     // Berechne die sichtbare Breite und Höhe
     let viewportWidth = document.documentElement.clientWidth;
@@ -36,8 +31,8 @@ function resizeCanvas()
     let height = scrollHeight > viewportHeight ? scrollHeight : viewportHeight;
 
     // Setze die Canvas-Größe auf gerundete Werte
-    canvas.width = Math.ceil(width / adjustedZoom);
-    canvas.height = Math.ceil(height / adjustedZoom);
+    canvas.width = Math.ceil(width / zoomFactor);
+    canvas.height = Math.ceil(height / zoomFactor);
 
     initColumns();
 }
